@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327896D72AA628E600C7B31B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327896D62AA628E600C7B31B /* AppDelegate.swift */; };
+		327896D92AA628E700C7B31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327896D82AA628E700C7B31B /* Assets.xcassets */; };
+		327896DC2AA628E700C7B31B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327896DA2AA628E700C7B31B /* MainMenu.xib */; };
+		327896E72AA628E700C7B31B /* BoomRecorderMIDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327896E62AA628E700C7B31B /* BoomRecorderMIDITests.swift */; };
+		327896F12AA628E700C7B31B /* BoomRecorderMIDIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327896F02AA628E700C7B31B /* BoomRecorderMIDIUITests.swift */; };
+		327896F32AA628E700C7B31B /* BoomRecorderMIDIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327896F22AA628E700C7B31B /* BoomRecorderMIDIUITestsLaunchTests.swift */; };
+		327897072AA62B6300C7B31B /* BoomRecorderMIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327897062AA62B6300C7B31B /* BoomRecorderMIDI.swift */; };
+		32F431142AA7772C00438439 /* SwiftMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F431112AA7772C00438439 /* SwiftMidi.swift */; };
+		32F431152AA7772C00438439 /* SwiftMidiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F431122AA7772C00438439 /* SwiftMidiConstants.swift */; };
+		32F431162AA7772C00438439 /* SwiftMidiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F431132AA7772C00438439 /* SwiftMidiClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327896E32AA628E700C7B31B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327896CB2AA628E600C7B31B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327896D22AA628E600C7B31B;
+			remoteInfo = BoomRecorderMIDI;
+		};
+		327896ED2AA628E700C7B31B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327896CB2AA628E600C7B31B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327896D22AA628E600C7B31B;
+			remoteInfo = BoomRecorderMIDI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		327896D32AA628E600C7B31B /* BoomRecorderMIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoomRecorderMIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327896D62AA628E600C7B31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		327896D82AA628E700C7B31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327896DB2AA628E700C7B31B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		327896DD2AA628E700C7B31B /* BoomRecorderMIDI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoomRecorderMIDI.entitlements; sourceTree = "<group>"; };
+		327896E22AA628E700C7B31B /* BoomRecorderMIDITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoomRecorderMIDITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327896E62AA628E700C7B31B /* BoomRecorderMIDITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomRecorderMIDITests.swift; sourceTree = "<group>"; };
+		327896EC2AA628E700C7B31B /* BoomRecorderMIDIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoomRecorderMIDIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327896F02AA628E700C7B31B /* BoomRecorderMIDIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomRecorderMIDIUITests.swift; sourceTree = "<group>"; };
+		327896F22AA628E700C7B31B /* BoomRecorderMIDIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomRecorderMIDIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		327897062AA62B6300C7B31B /* BoomRecorderMIDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomRecorderMIDI.swift; sourceTree = "<group>"; };
+		32F431112AA7772C00438439 /* SwiftMidi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMidi.swift; sourceTree = "<group>"; };
+		32F431122AA7772C00438439 /* SwiftMidiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMidiConstants.swift; sourceTree = "<group>"; };
+		32F431132AA7772C00438439 /* SwiftMidiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMidiClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327896D02AA628E600C7B31B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327896DF2AA628E700C7B31B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327896E92AA628E700C7B31B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327896CA2AA628E600C7B31B = {
+			isa = PBXGroup;
+			children = (
+				327896D52AA628E600C7B31B /* BoomRecorderMIDI */,
+				327896E52AA628E700C7B31B /* BoomRecorderMIDITests */,
+				327896EF2AA628E700C7B31B /* BoomRecorderMIDIUITests */,
+				327896D42AA628E600C7B31B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327896D42AA628E600C7B31B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327896D32AA628E600C7B31B /* BoomRecorderMIDI.app */,
+				327896E22AA628E700C7B31B /* BoomRecorderMIDITests.xctest */,
+				327896EC2AA628E700C7B31B /* BoomRecorderMIDIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327896D52AA628E600C7B31B /* BoomRecorderMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				32F431102AA7772C00438439 /* SwiftMIDI */,
+				327896D62AA628E600C7B31B /* AppDelegate.swift */,
+				327896D82AA628E700C7B31B /* Assets.xcassets */,
+				327896DA2AA628E700C7B31B /* MainMenu.xib */,
+				327896DD2AA628E700C7B31B /* BoomRecorderMIDI.entitlements */,
+				327897062AA62B6300C7B31B /* BoomRecorderMIDI.swift */,
+			);
+			path = BoomRecorderMIDI;
+			sourceTree = "<group>";
+		};
+		327896E52AA628E700C7B31B /* BoomRecorderMIDITests */ = {
+			isa = PBXGroup;
+			children = (
+				327896E62AA628E700C7B31B /* BoomRecorderMIDITests.swift */,
+			);
+			path = BoomRecorderMIDITests;
+			sourceTree = "<group>";
+		};
+		327896EF2AA628E700C7B31B /* BoomRecorderMIDIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				327896F02AA628E700C7B31B /* BoomRecorderMIDIUITests.swift */,
+				327896F22AA628E700C7B31B /* BoomRecorderMIDIUITestsLaunchTests.swift */,
+			);
+			path = BoomRecorderMIDIUITests;
+			sourceTree = "<group>";
+		};
+		32F431102AA7772C00438439 /* SwiftMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				32F431112AA7772C00438439 /* SwiftMidi.swift */,
+				32F431122AA7772C00438439 /* SwiftMidiConstants.swift */,
+				32F431132AA7772C00438439 /* SwiftMidiClient.swift */,
+			);
+			name = SwiftMIDI;
+			path = ../../SwiftMIDI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327896D22AA628E600C7B31B /* BoomRecorderMIDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327896F62AA628E700C7B31B /* Build configuration list for PBXNativeTarget "BoomRecorderMIDI" */;
+			buildPhases = (
+				327896CF2AA628E600C7B31B /* Sources */,
+				327896D02AA628E600C7B31B /* Frameworks */,
+				327896D12AA628E600C7B31B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoomRecorderMIDI;
+			productName = BoomRecorderMIDI;
+			productReference = 327896D32AA628E600C7B31B /* BoomRecorderMIDI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327896E12AA628E700C7B31B /* BoomRecorderMIDITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327896F92AA628E700C7B31B /* Build configuration list for PBXNativeTarget "BoomRecorderMIDITests" */;
+			buildPhases = (
+				327896DE2AA628E700C7B31B /* Sources */,
+				327896DF2AA628E700C7B31B /* Frameworks */,
+				327896E02AA628E700C7B31B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327896E42AA628E700C7B31B /* PBXTargetDependency */,
+			);
+			name = BoomRecorderMIDITests;
+			productName = BoomRecorderMIDITests;
+			productReference = 327896E22AA628E700C7B31B /* BoomRecorderMIDITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		327896EB2AA628E700C7B31B /* BoomRecorderMIDIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327896FC2AA628E700C7B31B /* Build configuration list for PBXNativeTarget "BoomRecorderMIDIUITests" */;
+			buildPhases = (
+				327896E82AA628E700C7B31B /* Sources */,
+				327896E92AA628E700C7B31B /* Frameworks */,
+				327896EA2AA628E700C7B31B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327896EE2AA628E700C7B31B /* PBXTargetDependency */,
+			);
+			name = BoomRecorderMIDIUITests;
+			productName = BoomRecorderMIDIUITests;
+			productReference = 327896EC2AA628E700C7B31B /* BoomRecorderMIDIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327896CB2AA628E600C7B31B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					327896D22AA628E600C7B31B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					327896E12AA628E700C7B31B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 327896D22AA628E600C7B31B;
+					};
+					327896EB2AA628E700C7B31B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 327896D22AA628E600C7B31B;
+					};
+				};
+			};
+			buildConfigurationList = 327896CE2AA628E600C7B31B /* Build configuration list for PBXProject "BoomRecorderMIDI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327896CA2AA628E600C7B31B;
+			productRefGroup = 327896D42AA628E600C7B31B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327896D22AA628E600C7B31B /* BoomRecorderMIDI */,
+				327896E12AA628E700C7B31B /* BoomRecorderMIDITests */,
+				327896EB2AA628E700C7B31B /* BoomRecorderMIDIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327896D12AA628E600C7B31B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327896D92AA628E700C7B31B /* Assets.xcassets in Resources */,
+				327896DC2AA628E700C7B31B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327896E02AA628E700C7B31B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327896EA2AA628E700C7B31B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327896CF2AA628E600C7B31B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F431152AA7772C00438439 /* SwiftMidiConstants.swift in Sources */,
+				32F431142AA7772C00438439 /* SwiftMidi.swift in Sources */,
+				327896D72AA628E600C7B31B /* AppDelegate.swift in Sources */,
+				32F431162AA7772C00438439 /* SwiftMidiClient.swift in Sources */,
+				327897072AA62B6300C7B31B /* BoomRecorderMIDI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327896DE2AA628E700C7B31B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327896E72AA628E700C7B31B /* BoomRecorderMIDITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327896E82AA628E700C7B31B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327896F32AA628E700C7B31B /* BoomRecorderMIDIUITestsLaunchTests.swift in Sources */,
+				327896F12AA628E700C7B31B /* BoomRecorderMIDIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327896E42AA628E700C7B31B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327896D22AA628E600C7B31B /* BoomRecorderMIDI */;
+			targetProxy = 327896E32AA628E700C7B31B /* PBXContainerItemProxy */;
+		};
+		327896EE2AA628E700C7B31B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327896D22AA628E600C7B31B /* BoomRecorderMIDI */;
+			targetProxy = 327896ED2AA628E700C7B31B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		327896DA2AA628E700C7B31B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327896DB2AA628E700C7B31B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327896F42AA628E700C7B31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		327896F52AA628E700C7B31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		327896F72AA628E700C7B31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BoomRecorderMIDI/BoomRecorderMIDI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.BoomRecorderMIDI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		327896F82AA628E700C7B31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BoomRecorderMIDI/BoomRecorderMIDI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.BoomRecorderMIDI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		327896FA2AA628E700C7B31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.BoomRecorderMIDITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoomRecorderMIDI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoomRecorderMIDI";
+			};
+			name = Debug;
+		};
+		327896FB2AA628E700C7B31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.BoomRecorderMIDITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoomRecorderMIDI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoomRecorderMIDI";
+			};
+			name = Release;
+		};
+		327896FD2AA628E700C7B31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.BoomRecorderMIDIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BoomRecorderMIDI;
+			};
+			name = Debug;
+		};
+		327896FE2AA628E700C7B31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.BoomRecorderMIDIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BoomRecorderMIDI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327896CE2AA628E600C7B31B /* Build configuration list for PBXProject "BoomRecorderMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327896F42AA628E700C7B31B /* Debug */,
+				327896F52AA628E700C7B31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327896F62AA628E700C7B31B /* Build configuration list for PBXNativeTarget "BoomRecorderMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327896F72AA628E700C7B31B /* Debug */,
+				327896F82AA628E700C7B31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327896F92AA628E700C7B31B /* Build configuration list for PBXNativeTarget "BoomRecorderMIDITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327896FA2AA628E700C7B31B /* Debug */,
+				327896FB2AA628E700C7B31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327896FC2AA628E700C7B31B /* Build configuration list for PBXNativeTarget "BoomRecorderMIDIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327896FD2AA628E700C7B31B /* Debug */,
+				327896FE2AA628E700C7B31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327896CB2AA628E600C7B31B /* Project object */;
+}

@@ -1,0 +1,1559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3213E0072AA78C9F00AB8691 /* BoomRecorderMIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E0062AA78C9F00AB8691 /* BoomRecorderMIDI.swift */; };
+		3213E0402AA7EB5300AB8691 /* StatusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E03F2AA7EB5300AB8691 /* StatusImageView.swift */; };
+		321A0FDB2973305F00CA4F1E /* AleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 321A0FD92973305F00CA4F1E /* AleDelegate.m */; };
+		321A0FE22973321100CA4F1E /* TCFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 321A0FDE2973321100CA4F1E /* TCFormatter.m */; };
+		321A0FE32973321100CA4F1E /* TcCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 321A0FE12973321100CA4F1E /* TcCalculator.m */; };
+		321A0FE9297332C900CA4F1E /* MidiClient_v2.m in Sources */ = {isa = PBXBuildFile; fileRef = 321A0FE4297332C900CA4F1E /* MidiClient_v2.m */; };
+		321A0FEA297332C900CA4F1E /* MidiHui.m in Sources */ = {isa = PBXBuildFile; fileRef = 321A0FE7297332C900CA4F1E /* MidiHui.m */; };
+		321A0FF0297333BC00CA4F1E /* outputs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321A0FEC297333BC00CA4F1E /* outputs.plist */; };
+		321A0FF1297333BC00CA4F1E /* ufxOutputDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321A0FED297333BC00CA4F1E /* ufxOutputDictionary.plist */; };
+		321A0FF2297333BC00CA4F1E /* ufxInputDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321A0FEE297333BC00CA4F1E /* ufxInputDictionary.plist */; };
+		321A0FF3297333BC00CA4F1E /* inputs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321A0FEF297333BC00CA4F1E /* inputs.plist */; };
+		3227BF1A2986FA070018B672 /* clear16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3227BF192986FA070018B672 /* clear16.png */; };
+		322EF00A2991B12B00CC057E /* LpMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EF0092991B12B00CC057E /* LpMini.swift */; };
+		3238F6BA297B3AB30076DE3A /* DocLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3238F6B9297B3AB30076DE3A /* DocLeftTableViewController.m */; };
+		3238F6BE297B3ADD0076DE3A /* DocRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3238F6BC297B3ADD0076DE3A /* DocRightTableViewController.m */; };
+		3238F6BF297B3ADD0076DE3A /* DocRightTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3238F6BD297B3ADD0076DE3A /* DocRightTableViewController.xib */; };
+		324D9AD629AC173500D750A8 /* ufxDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324D9AD529AC173500D750A8 /* ufxDictionary.plist */; };
+		325F5D932AF5B00C00545514 /* cliclick in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D922AF5B00C00545514 /* cliclick */; };
+		325F5DCA2AF5C00300545514 /* jxaRenameLastTrack.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D952AF5C00300545514 /* jxaRenameLastTrack.scpt */; };
+		325F5DCB2AF5C00300545514 /* isModalDialog.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D962AF5C00300545514 /* isModalDialog.scpt */; };
+		325F5DCC2AF5C00300545514 /* jxaIsModalDialog.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D972AF5C00300545514 /* jxaIsModalDialog.scpt */; };
+		325F5DCD2AF5C00300545514 /* addCue.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D982AF5C00300545514 /* addCue.scpt */; };
+		325F5DCE2AF5C00300545514 /* setCueName.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D992AF5C00300545514 /* setCueName.scpt */; };
+		325F5DCF2AF5C00300545514 /* prerollOff.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D9A2AF5C00300545514 /* prerollOff.scpt */; };
+		325F5DD02AF5C00300545514 /* copyClipToComp.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D9B2AF5C00300545514 /* copyClipToComp.scpt */; };
+		325F5DD12AF5C00300545514 /* jxaCutAndPaste.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D9C2AF5C00300545514 /* jxaCutAndPaste.scpt */; };
+		325F5DD22AF5C00300545514 /* zeroFeet.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D9D2AF5C00300545514 /* zeroFeet.scpt */; };
+		325F5DD32AF5C00300545514 /* stopQuickTime.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D9E2AF5C00300545514 /* stopQuickTime.scpt */; };
+		325F5DD42AF5C00300545514 /* jxaLocate.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5D9F2AF5C00300545514 /* jxaLocate.scpt */; };
+		325F5DD52AF5C00300545514 /* boomRecStop.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA02AF5C00300545514 /* boomRecStop.scpt */; };
+		325F5DD62AF5C00300545514 /* renameLastTrack.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA12AF5C00300545514 /* renameLastTrack.scpt */; };
+		325F5DD72AF5C00300545514 /* wildSyncSelect.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA22AF5C00300545514 /* wildSyncSelect.scpt */; };
+		325F5DD82AF5C00300545514 /* jxaGetSession.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA32AF5C00300545514 /* jxaGetSession.scpt */; };
+		325F5DD92AF5C00300545514 /* jxaPrerollOn.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA42AF5C00300545514 /* jxaPrerollOn.scpt */; };
+		325F5DDA2AF5C00300545514 /* jxaKeyStroke.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA52AF5C00300545514 /* jxaKeyStroke.scpt */; };
+		325F5DDB2AF5C00300545514 /* jxaGetVideoSyncOffset.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA62AF5C00300545514 /* jxaGetVideoSyncOffset.scpt */; };
+		325F5DDC2AF5C00300545514 /* showProtools.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA72AF5C00300545514 /* showProtools.scpt */; };
+		325F5DDD2AF5C00300545514 /* playQuickTime.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA82AF5C00300545514 /* playQuickTime.scpt */; };
+		325F5DDE2AF5C00300545514 /* prerollOn.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DA92AF5C00300545514 /* prerollOn.scpt */; };
+		325F5DDF2AF5C00300545514 /* keyStroke.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DAA2AF5C00300545514 /* keyStroke.scpt */; };
+		325F5DE02AF5C00300545514 /* mainCounterFormat.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DAB2AF5C00300545514 /* mainCounterFormat.scpt */; };
+		325F5DE12AF5C00300545514 /* keyCode.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DAC2AF5C00300545514 /* keyCode.scpt */; };
+		325F5DE22AF5C00300545514 /* jxaSetCueName.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DAD2AF5C00300545514 /* jxaSetCueName.scpt */; };
+		325F5DE32AF5C00300545514 /* keyWithModifiers.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DAE2AF5C00300545514 /* keyWithModifiers.scpt */; };
+		325F5DE42AF5C00300545514 /* cutAndPaste.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DAF2AF5C00300545514 /* cutAndPaste.scpt */; };
+		325F5DE52AF5C00300545514 /* linkTimelineAndEditSelection.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB02AF5C00300545514 /* linkTimelineAndEditSelection.scpt */; };
+		325F5DE62AF5C00300545514 /* setBoomRecFolder.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB12AF5C00300545514 /* setBoomRecFolder.scpt */; };
+		325F5DE72AF5C00300545514 /* jxaWildSyncSelect.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB22AF5C00300545514 /* jxaWildSyncSelect.scpt */; };
+		325F5DE82AF5C00300545514 /* mem.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB32AF5C00300545514 /* mem.scpt */; };
+		325F5DE92AF5C00300545514 /* loopPlaybackOff.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB42AF5C00300545514 /* loopPlaybackOff.scpt */; };
+		325F5DEA2AF5C00300545514 /* setNote.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB52AF5C00300545514 /* setNote.scpt */; };
+		325F5DEB2AF5C00300545514 /* wildSyncSelect2.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB62AF5C00300545514 /* wildSyncSelect2.scpt */; };
+		325F5DEC2AF5C00300545514 /* getPreEdit.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB72AF5C00300545514 /* getPreEdit.scpt */; };
+		325F5DED2AF5C00300545514 /* setDialog.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB82AF5C00300545514 /* setDialog.scpt */; };
+		325F5DEE2AF5C00300545514 /* jxaCopyClipToComp.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DB92AF5C00300545514 /* jxaCopyClipToComp.scpt */; };
+		325F5DEF2AF5C00300545514 /* armLastTrack.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DBA2AF5C00300545514 /* armLastTrack.scpt */; };
+		325F5DF02AF5C00300545514 /* jxaSetDialog.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DBB2AF5C00300545514 /* jxaSetDialog.scpt */; };
+		325F5DF12AF5C00300545514 /* jxaArmLastTrack.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DBC2AF5C00300545514 /* jxaArmLastTrack.scpt */; };
+		325F5DF22AF5C00300545514 /* pingProTools.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DBD2AF5C00300545514 /* pingProTools.scpt */; };
+		325F5DF32AF5C00300545514 /* muteTrackWithIndex.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DBE2AF5C00300545514 /* muteTrackWithIndex.scpt */; };
+		325F5DF42AF5C00300545514 /* getProtoolsInfo.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DBF2AF5C00300545514 /* getProtoolsInfo.scpt */; };
+		325F5DF52AF5C00300545514 /* jxaAddCue.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC02AF5C00300545514 /* jxaAddCue.scpt */; };
+		325F5DF62AF5C00300545514 /* jxaGetProtoolsPosition.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC12AF5C00300545514 /* jxaGetProtoolsPosition.scpt */; };
+		325F5DF72AF5C00300545514 /* showAlert.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC22AF5C00300545514 /* showAlert.scpt */; };
+		325F5DF82AF5C00300545514 /* boomRecAbort.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC32AF5C00300545514 /* boomRecAbort.scpt */; };
+		325F5DF92AF5C00300545514 /* jxaSetNote.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC42AF5C00300545514 /* jxaSetNote.scpt */; };
+		325F5DFA2AF5C00300545514 /* videoOnline.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC52AF5C00300545514 /* videoOnline.scpt */; };
+		325F5DFB2AF5C00300545514 /* getProtoolsPosition.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC62AF5C00300545514 /* getProtoolsPosition.scpt */; };
+		325F5DFC2AF5C00300545514 /* boomRecStart.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC72AF5C00300545514 /* boomRecStart.scpt */; };
+		325F5DFD2AF5C00300545514 /* jxaGetSampleRate.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC82AF5C00300545514 /* jxaGetSampleRate.scpt */; };
+		325F5DFE2AF5C00300545514 /* setZeroFeetAtTc.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 325F5DC92AF5C00300545514 /* setZeroFeetAtTc.scpt */; };
+		325FF4222A81539B00BD1E0A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF4122A81539B00BD1E0A /* AudioPlayer.swift */; };
+		325FF4232A81539B00BD1E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325FF4132A81539B00BD1E0A /* Assets.xcassets */; };
+		325FF4252A81539B00BD1E0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325FF4162A81539B00BD1E0A /* Preview Assets.xcassets */; };
+		325FF4262A81539B00BD1E0A /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF4172A81539B00BD1E0A /* ScreenRecorder.swift */; };
+		325FF4272A81539B00BD1E0A /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 325FF4192A81539B00BD1E0A /* Synth.aif */; };
+		325FF4282A81539B00BD1E0A /* PowerMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF41A2A81539B00BD1E0A /* PowerMeter.swift */; };
+		325FF4292A81539B00BD1E0A /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF41C2A81539B00BD1E0A /* CapturePreview.swift */; };
+		325FF42A2A81539B00BD1E0A /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF41D2A81539B00BD1E0A /* MaterialView.swift */; };
+		325FF42B2A81539B00BD1E0A /* AudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF41E2A81539B00BD1E0A /* AudioLevelsView.swift */; };
+		325FF42C2A81539B00BD1E0A /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF41F2A81539B00BD1E0A /* ConfigurationView.swift */; };
+		325FF42D2A81539B00BD1E0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF4202A81539B00BD1E0A /* ContentView.swift */; };
+		325FF42E2A81539B00BD1E0A /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF4212A81539B00BD1E0A /* CaptureEngine.swift */; };
+		3268C4EE2992F8D0000BE1C2 /* SwiftMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268C4EA2992F8D0000BE1C2 /* SwiftMidi.swift */; };
+		3268C4EF2992F8D0000BE1C2 /* SwiftMidiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268C4EB2992F8D0000BE1C2 /* SwiftMidiConstants.swift */; };
+		3268C4F12992F8D0000BE1C2 /* SwiftMidiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268C4ED2992F8D0000BE1C2 /* SwiftMidiClient.swift */; };
+		3276EF182A818A2600CC4319 /* ObjCPlayFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3276EF172A818A2600CC4319 /* ObjCPlayFile.mm */; };
+		327EDD6C2AAA2164001AEEBE /* DialMidiWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EDD6A2AAA2164001AEEBE /* DialMidiWindowController.swift */; };
+		327EDD6D2AAA2164001AEEBE /* DialMidiWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327EDD6B2AAA2164001AEEBE /* DialMidiWindowController.xib */; };
+		327EDD6F2AAA22F8001AEEBE /* DialMidiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327EDD6E2AAA22F8001AEEBE /* DialMidiViewController.swift */; };
+		327EDD712AAA77C9001AEEBE /* dialMidi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 327EDD702AAA77C9001AEEBE /* dialMidi.plist */; };
+		32892D392A701B0E00971C95 /* AudioPlayerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32892D372A701B0E00971C95 /* AudioPlayerWindowController.swift */; };
+		32892D3A2A701B0E00971C95 /* AudioPlayerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32892D382A701B0E00971C95 /* AudioPlayerWindowController.xib */; };
+		32892D3C2A701DA800971C95 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32892D3B2A701DA800971C95 /* AudioPlayerViewController.swift */; };
+		328F26D42AAF96AB0002A9FD /* ControlMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328F26D32AAF96AB0002A9FD /* ControlMidi.swift */; };
+		3291311E2982D0050083217A /* ColorSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3291311D2982D0050083217A /* ColorSupport.m */; };
+		3296F08A2AE1D8450005B2F5 /* MtcMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3296F0892AE1D8450005B2F5 /* MtcMidi.swift */; };
+		32A35F7F2A71578F0080AE1B /* VideoDelayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A35F7D2A71578F0080AE1B /* VideoDelayWindowController.swift */; };
+		32C7B2972AAB62DF0064F259 /* LoopMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7B2962AAB62DF0064F259 /* LoopMidi.swift */; };
+		32C7B2A62AAB8D570064F259 /* StatusMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7B2A52AAB8D570064F259 /* StatusMidi.swift */; };
+		32DB419529733F9900573A3B /* StreamerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB419329733F9800573A3B /* StreamerWindowController.m */; };
+		32DB419629733F9900573A3B /* StreamerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB419429733F9800573A3B /* StreamerWindowController.xib */; };
+		32DB41AE2973405100573A3B /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41982973404E00573A3B /* LeftTableViewController.m */; };
+		32DB41AF2973405100573A3B /* MatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41992973404E00573A3B /* MatrixView.m */; };
+		32DB41B02973405100573A3B /* Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB419C2973404F00573A3B /* Matrix.m */; };
+		32DB41B12973405100573A3B /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB419F2973404F00573A3B /* ItemView.m */; };
+		32DB41B22973405100573A3B /* MatrixWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB41A02973404F00573A3B /* MatrixWindowController.xib */; };
+		32DB41B32973405100573A3B /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41A22973404F00573A3B /* Slider.m */; };
+		32DB41B42973405100573A3B /* Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB41A32973405000573A3B /* Item.xib */; };
+		32DB41B52973405100573A3B /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41A52973405000573A3B /* Item.m */; };
+		32DB41B62973405100573A3B /* FileDropTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41A62973405000573A3B /* FileDropTextField.m */; };
+		32DB41B72973405100573A3B /* RightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41A72973405000573A3B /* RightTableViewController.m */; };
+		32DB41B82973405100573A3B /* MatrixWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41AA2973405100573A3B /* MatrixWindowController.m */; };
+		32DB41B92973405100573A3B /* RowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41AD2973405100573A3B /* RowView.m */; };
+		32DB41BF297340E000573A3B /* TcpClientBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41BD297340DF00573A3B /* TcpClientBrowser.m */; };
+		32DB41C0297340E000573A3B /* TcpClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41BE297340DF00573A3B /* TcpClientConnection.m */; };
+		32DB41CA2973420D00573A3B /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41C52973420D00573A3B /* Document.m */; };
+		32DB41CB2973420D00573A3B /* DocWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41C62973420D00573A3B /* DocWindow.m */; };
+		32DB41CF2973426F00573A3B /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB41CD2973426F00573A3B /* Document.xib */; };
+		32DB41D62973433000573A3B /* EditorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB41D12973432F00573A3B /* EditorWindowController.xib */; };
+		32DB41D72973433000573A3B /* BackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41D22973433000573A3B /* BackgroundImageView.m */; };
+		32DB41D82973433000573A3B /* EditorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41D42973433000573A3B /* EditorWindowController.m */; };
+		32DB41DF297343A300573A3B /* ScriptResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41DD297343A300573A3B /* ScriptResult.m */; };
+		32DB4201297345EC00573A3B /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB41FF297345EC00573A3B /* Server.m */; };
+		32DB4202297345EC00573A3B /* OscServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB4200297345EC00573A3B /* OscServer.m */; };
+		32DB4208297346DC00573A3B /* Streamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB4207297346DC00573A3B /* Streamer.swift */; };
+		32DB420D2973474200573A3B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB420A2973474200573A3B /* TextView.swift */; };
+		32DB420E2973474200573A3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB420B2973474200573A3B /* ViewController.swift */; };
+		32DB42112973477800573A3B /* OverlayWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB420F2973477800573A3B /* OverlayWindowController.xib */; };
+		32DB42122973477800573A3B /* OverlayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB42102973477800573A3B /* OverlayWindowController.swift */; };
+		32DB4214297347A200573A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB4213297347A200573A3B /* Assets.xcassets */; };
+		32DB42232973485500573A3B /* StreamerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB421C2973485500573A3B /* StreamerObject.m */; };
+		32DB42242973485500573A3B /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 32DB421D2973485500573A3B /* AAPLShaders.metal */; };
+		32DB42252973485500573A3B /* StreamerRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB42202973485500573A3B /* StreamerRenderer.m */; };
+		32DB42262973485500573A3B /* AAPLStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB42222973485500573A3B /* AAPLStreamer.m */; };
+		32DB422F29734AB000573A3B /* Annunciator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB422E29734AB000573A3B /* Annunciator.m */; };
+		32DB423C29734B2900573A3B /* red16.png in Resources */ = {isa = PBXBuildFile; fileRef = 32DB423229734B2900573A3B /* red16.png */; };
+		32DB423E29734B2900573A3B /* green16.png in Resources */ = {isa = PBXBuildFile; fileRef = 32DB423429734B2900573A3B /* green16.png */; };
+		32DB423F29734B2900573A3B /* blue16.png in Resources */ = {isa = PBXBuildFile; fileRef = 32DB423629734B2900573A3B /* blue16.png */; };
+		32DB424B29734C2700573A3B /* AdrClientWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB424629734C2600573A3B /* AdrClientWindowController.m */; };
+		32DB424C29734C2700573A3B /* AdrClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB424829734C2600573A3B /* AdrClient.m */; };
+		32DB424D29734C2700573A3B /* AdrClientWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB424A29734C2600573A3B /* AdrClientWindowController.xib */; };
+		32DB425029734D3300573A3B /* EditorTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB424F29734D3300573A3B /* EditorTextField.m */; };
+		32DB425429734E2100573A3B /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB425229734E2100573A3B /* PreferencesWindowController.m */; };
+		32DB425529734E2100573A3B /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DB425329734E2100573A3B /* PreferencesWindowController.xib */; };
+		32DB425829734E9400573A3B /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB425729734E9400573A3B /* TableView.m */; };
+		32DB425D297353AD00573A3B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB425C297353AD00573A3B /* AVFoundation.framework */; };
+		32DB4261297353C000573A3B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB4260297353C000573A3B /* Cocoa.framework */; };
+		32DB4267297353DD00573A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB4266297353DC00573A3B /* Foundation.framework */; };
+		32DB4269297353EE00573A3B /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB4268297353EE00573A3B /* Network.framework */; };
+		32DB426B297353F900573A3B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB426A297353F900573A3B /* MetalKit.framework */; };
+		32E183EC298EE397008C2B32 /* XKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E183E4298EE396008C2B32 /* XKey.swift */; };
+		32E183ED298EE397008C2B32 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E183E6298EE396008C2B32 /* ReadData.swift */; };
+		32E183EE298EE397008C2B32 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E183E8298EE396008C2B32 /* data.json */; };
+		32E183EF298EE397008C2B32 /* xKeyProducts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32E183E9298EE396008C2B32 /* xKeyProducts.plist */; };
+		32E183F0298EE397008C2B32 /* XKProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E183EA298EE397008C2B32 /* XKProducts.json */; };
+		32E183F1298EE397008C2B32 /* USBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E183EB298EE397008C2B32 /* USBConnection.swift */; };
+		32E338CF2A93DBA300C484FB /* PixelBufferDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E338CE2A93DBA300C484FB /* PixelBufferDelay.swift */; };
+		32EAAC92297773AD00D7BBB6 /* ArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EAAC90297773AD00D7BBB6 /* ArrayController.m */; };
+		32EADFFF2A729FF100C5D223 /* FileDropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EADFFE2A729FF100C5D223 /* FileDropButton.swift */; };
+		32F8FD992A6F3BAD002AAEF8 /* SwiftDropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F8FD982A6F3BAD002AAEF8 /* SwiftDropButton.swift */; };
+		32FC9D9C2973139800DD9E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FC9D9B2973139800DD9E2D /* Assets.xcassets */; };
+		32FC9D9F2973139800DD9E2D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FC9D9D2973139800DD9E2D /* MainMenu.xib */; };
+		32FC9DA22973139800DD9E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC9DA12973139800DD9E2D /* main.m */; };
+		32FC9DAD2973139800DD9E2D /* AleDoc21Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC9DAC2973139800DD9E2D /* AleDoc21Tests.m */; };
+		32FC9DB72973139800DD9E2D /* AleDoc21UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC9DB62973139800DD9E2D /* AleDoc21UITests.m */; };
+		32FC9DB92973139800DD9E2D /* AleDoc21UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC9DB82973139800DD9E2D /* AleDoc21UITestsLaunchTests.m */; };
+		7380797729E0840B0048F8F3 /* yellow16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7380797629E0840B0048F8F3 /* yellow16.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32FC9DA92973139800DD9E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FC9D872973139800DD9E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32FC9D8E2973139800DD9E2D;
+			remoteInfo = AleDoc21;
+		};
+		32FC9DB32973139800DD9E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FC9D872973139800DD9E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32FC9D8E2973139800DD9E2D;
+			remoteInfo = AleDoc21;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3213E0062AA78C9F00AB8691 /* BoomRecorderMIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoomRecorderMIDI.swift; sourceTree = "<group>"; };
+		3213E03F2AA7EB5300AB8691 /* StatusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageView.swift; sourceTree = "<group>"; };
+		321A0FD92973305F00CA4F1E /* AleDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AleDelegate.m; sourceTree = "<group>"; };
+		321A0FDA2973305F00CA4F1E /* AleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AleDelegate.h; sourceTree = "<group>"; };
+		321A0FDE2973321100CA4F1E /* TCFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCFormatter.m; sourceTree = "<group>"; };
+		321A0FDF2973321100CA4F1E /* TCFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCFormatter.h; sourceTree = "<group>"; };
+		321A0FE02973321100CA4F1E /* TcCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcCalculator.h; sourceTree = "<group>"; };
+		321A0FE12973321100CA4F1E /* TcCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcCalculator.m; sourceTree = "<group>"; };
+		321A0FE4297332C900CA4F1E /* MidiClient_v2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiClient_v2.m; sourceTree = "<group>"; };
+		321A0FE5297332C900CA4F1E /* MidiCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiCommands.h; sourceTree = "<group>"; };
+		321A0FE6297332C900CA4F1E /* MidiHui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiHui.h; sourceTree = "<group>"; };
+		321A0FE7297332C900CA4F1E /* MidiHui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiHui.m; sourceTree = "<group>"; };
+		321A0FE8297332C900CA4F1E /* MidiClient_v2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiClient_v2.h; sourceTree = "<group>"; };
+		321A0FEC297333BC00CA4F1E /* outputs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = outputs.plist; sourceTree = "<group>"; };
+		321A0FED297333BC00CA4F1E /* ufxOutputDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ufxOutputDictionary.plist; sourceTree = "<group>"; };
+		321A0FEE297333BC00CA4F1E /* ufxInputDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ufxInputDictionary.plist; sourceTree = "<group>"; };
+		321A0FEF297333BC00CA4F1E /* inputs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = inputs.plist; sourceTree = "<group>"; };
+		3227BF192986FA070018B672 /* clear16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear16.png; sourceTree = "<group>"; };
+		322EF0092991B12B00CC057E /* LpMini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LpMini.swift; sourceTree = "<group>"; };
+		3238F6B8297B3AB30076DE3A /* DocLeftTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocLeftTableViewController.h; sourceTree = "<group>"; };
+		3238F6B9297B3AB30076DE3A /* DocLeftTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocLeftTableViewController.m; sourceTree = "<group>"; };
+		3238F6BB297B3ADD0076DE3A /* DocRightTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocRightTableViewController.h; sourceTree = "<group>"; };
+		3238F6BC297B3ADD0076DE3A /* DocRightTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocRightTableViewController.m; sourceTree = "<group>"; };
+		3238F6BD297B3ADD0076DE3A /* DocRightTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocRightTableViewController.xib; sourceTree = "<group>"; };
+		324D9AD529AC173500D750A8 /* ufxDictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ufxDictionary.plist; sourceTree = "<group>"; };
+		325F5D922AF5B00C00545514 /* cliclick */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cliclick; sourceTree = "<group>"; };
+		325F5D952AF5C00300545514 /* jxaRenameLastTrack.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaRenameLastTrack.scpt; sourceTree = "<group>"; };
+		325F5D962AF5C00300545514 /* isModalDialog.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = isModalDialog.scpt; sourceTree = "<group>"; };
+		325F5D972AF5C00300545514 /* jxaIsModalDialog.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaIsModalDialog.scpt; sourceTree = "<group>"; };
+		325F5D982AF5C00300545514 /* addCue.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = addCue.scpt; sourceTree = "<group>"; };
+		325F5D992AF5C00300545514 /* setCueName.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = setCueName.scpt; sourceTree = "<group>"; };
+		325F5D9A2AF5C00300545514 /* prerollOff.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = prerollOff.scpt; sourceTree = "<group>"; };
+		325F5D9B2AF5C00300545514 /* copyClipToComp.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = copyClipToComp.scpt; sourceTree = "<group>"; };
+		325F5D9C2AF5C00300545514 /* jxaCutAndPaste.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaCutAndPaste.scpt; sourceTree = "<group>"; };
+		325F5D9D2AF5C00300545514 /* zeroFeet.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = zeroFeet.scpt; sourceTree = "<group>"; };
+		325F5D9E2AF5C00300545514 /* stopQuickTime.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = stopQuickTime.scpt; sourceTree = "<group>"; };
+		325F5D9F2AF5C00300545514 /* jxaLocate.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaLocate.scpt; sourceTree = "<group>"; };
+		325F5DA02AF5C00300545514 /* boomRecStop.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = boomRecStop.scpt; sourceTree = "<group>"; };
+		325F5DA12AF5C00300545514 /* renameLastTrack.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = renameLastTrack.scpt; sourceTree = "<group>"; };
+		325F5DA22AF5C00300545514 /* wildSyncSelect.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = wildSyncSelect.scpt; sourceTree = "<group>"; };
+		325F5DA32AF5C00300545514 /* jxaGetSession.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaGetSession.scpt; sourceTree = "<group>"; };
+		325F5DA42AF5C00300545514 /* jxaPrerollOn.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = jxaPrerollOn.scpt; sourceTree = "<group>"; };
+		325F5DA52AF5C00300545514 /* jxaKeyStroke.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaKeyStroke.scpt; sourceTree = "<group>"; };
+		325F5DA62AF5C00300545514 /* jxaGetVideoSyncOffset.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaGetVideoSyncOffset.scpt; sourceTree = "<group>"; };
+		325F5DA72AF5C00300545514 /* showProtools.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = showProtools.scpt; sourceTree = "<group>"; };
+		325F5DA82AF5C00300545514 /* playQuickTime.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = playQuickTime.scpt; sourceTree = "<group>"; };
+		325F5DA92AF5C00300545514 /* prerollOn.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = prerollOn.scpt; sourceTree = "<group>"; };
+		325F5DAA2AF5C00300545514 /* keyStroke.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = keyStroke.scpt; sourceTree = "<group>"; };
+		325F5DAB2AF5C00300545514 /* mainCounterFormat.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = mainCounterFormat.scpt; sourceTree = "<group>"; };
+		325F5DAC2AF5C00300545514 /* keyCode.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = keyCode.scpt; sourceTree = "<group>"; };
+		325F5DAD2AF5C00300545514 /* jxaSetCueName.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaSetCueName.scpt; sourceTree = "<group>"; };
+		325F5DAE2AF5C00300545514 /* keyWithModifiers.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = keyWithModifiers.scpt; sourceTree = "<group>"; };
+		325F5DAF2AF5C00300545514 /* cutAndPaste.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutAndPaste.scpt; sourceTree = "<group>"; };
+		325F5DB02AF5C00300545514 /* linkTimelineAndEditSelection.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = linkTimelineAndEditSelection.scpt; sourceTree = "<group>"; };
+		325F5DB12AF5C00300545514 /* setBoomRecFolder.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = setBoomRecFolder.scpt; sourceTree = "<group>"; };
+		325F5DB22AF5C00300545514 /* jxaWildSyncSelect.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaWildSyncSelect.scpt; sourceTree = "<group>"; };
+		325F5DB32AF5C00300545514 /* mem.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = mem.scpt; sourceTree = "<group>"; };
+		325F5DB42AF5C00300545514 /* loopPlaybackOff.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = loopPlaybackOff.scpt; sourceTree = "<group>"; };
+		325F5DB52AF5C00300545514 /* setNote.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = setNote.scpt; sourceTree = "<group>"; };
+		325F5DB62AF5C00300545514 /* wildSyncSelect2.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = wildSyncSelect2.scpt; sourceTree = "<group>"; };
+		325F5DB72AF5C00300545514 /* getPreEdit.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = getPreEdit.scpt; sourceTree = "<group>"; };
+		325F5DB82AF5C00300545514 /* setDialog.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = setDialog.scpt; sourceTree = "<group>"; };
+		325F5DB92AF5C00300545514 /* jxaCopyClipToComp.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaCopyClipToComp.scpt; sourceTree = "<group>"; };
+		325F5DBA2AF5C00300545514 /* armLastTrack.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = armLastTrack.scpt; sourceTree = "<group>"; };
+		325F5DBB2AF5C00300545514 /* jxaSetDialog.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaSetDialog.scpt; sourceTree = "<group>"; };
+		325F5DBC2AF5C00300545514 /* jxaArmLastTrack.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaArmLastTrack.scpt; sourceTree = "<group>"; };
+		325F5DBD2AF5C00300545514 /* pingProTools.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = pingProTools.scpt; sourceTree = "<group>"; };
+		325F5DBE2AF5C00300545514 /* muteTrackWithIndex.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = muteTrackWithIndex.scpt; sourceTree = "<group>"; };
+		325F5DBF2AF5C00300545514 /* getProtoolsInfo.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = getProtoolsInfo.scpt; sourceTree = "<group>"; };
+		325F5DC02AF5C00300545514 /* jxaAddCue.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaAddCue.scpt; sourceTree = "<group>"; };
+		325F5DC12AF5C00300545514 /* jxaGetProtoolsPosition.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaGetProtoolsPosition.scpt; sourceTree = "<group>"; };
+		325F5DC22AF5C00300545514 /* showAlert.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = showAlert.scpt; sourceTree = "<group>"; };
+		325F5DC32AF5C00300545514 /* boomRecAbort.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = boomRecAbort.scpt; sourceTree = "<group>"; };
+		325F5DC42AF5C00300545514 /* jxaSetNote.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaSetNote.scpt; sourceTree = "<group>"; };
+		325F5DC52AF5C00300545514 /* videoOnline.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoOnline.scpt; sourceTree = "<group>"; };
+		325F5DC62AF5C00300545514 /* getProtoolsPosition.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = getProtoolsPosition.scpt; sourceTree = "<group>"; };
+		325F5DC72AF5C00300545514 /* boomRecStart.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = boomRecStart.scpt; sourceTree = "<group>"; };
+		325F5DC82AF5C00300545514 /* jxaGetSampleRate.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jxaGetSampleRate.scpt; sourceTree = "<group>"; };
+		325F5DC92AF5C00300545514 /* setZeroFeetAtTc.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = setZeroFeetAtTc.scpt; sourceTree = "<group>"; };
+		325FF4112A81539B00BD1E0A /* CaptureSample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CaptureSample.entitlements; sourceTree = "<group>"; };
+		325FF4122A81539B00BD1E0A /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		325FF4132A81539B00BD1E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		325FF4162A81539B00BD1E0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		325FF4172A81539B00BD1E0A /* ScreenRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
+		325FF4192A81539B00BD1E0A /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		325FF41A2A81539B00BD1E0A /* PowerMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerMeter.swift; sourceTree = "<group>"; };
+		325FF41C2A81539B00BD1E0A /* CapturePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
+		325FF41D2A81539B00BD1E0A /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		325FF41E2A81539B00BD1E0A /* AudioLevelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLevelsView.swift; sourceTree = "<group>"; };
+		325FF41F2A81539B00BD1E0A /* ConfigurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		325FF4202A81539B00BD1E0A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		325FF4212A81539B00BD1E0A /* CaptureEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
+		3268C4EA2992F8D0000BE1C2 /* SwiftMidi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMidi.swift; sourceTree = "<group>"; };
+		3268C4EB2992F8D0000BE1C2 /* SwiftMidiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMidiConstants.swift; sourceTree = "<group>"; };
+		3268C4ED2992F8D0000BE1C2 /* SwiftMidiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMidiClient.swift; sourceTree = "<group>"; };
+		3276EF162A818A2600CC4319 /* ObjCPlayFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCPlayFile.h; sourceTree = "<group>"; };
+		3276EF172A818A2600CC4319 /* ObjCPlayFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCPlayFile.mm; sourceTree = "<group>"; };
+		327EDD6A2AAA2164001AEEBE /* DialMidiWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialMidiWindowController.swift; sourceTree = "<group>"; };
+		327EDD6B2AAA2164001AEEBE /* DialMidiWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialMidiWindowController.xib; sourceTree = "<group>"; };
+		327EDD6E2AAA22F8001AEEBE /* DialMidiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialMidiViewController.swift; sourceTree = "<group>"; };
+		327EDD702AAA77C9001AEEBE /* dialMidi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = dialMidi.plist; sourceTree = "<group>"; };
+		32892D372A701B0E00971C95 /* AudioPlayerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerWindowController.swift; sourceTree = "<group>"; };
+		32892D382A701B0E00971C95 /* AudioPlayerWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerWindowController.xib; sourceTree = "<group>"; };
+		32892D3B2A701DA800971C95 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		328F26D32AAF96AB0002A9FD /* ControlMidi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlMidi.swift; sourceTree = "<group>"; };
+		3291311D2982D0050083217A /* ColorSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorSupport.m; sourceTree = "<group>"; };
+		3291311F2982D01F0083217A /* ColorSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSupport.h; sourceTree = "<group>"; };
+		3296F0892AE1D8450005B2F5 /* MtcMidi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MtcMidi.swift; sourceTree = "<group>"; };
+		32A35F782A7157100080AE1B /* Syphon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Syphon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A35F7D2A71578F0080AE1B /* VideoDelayWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDelayWindowController.swift; sourceTree = "<group>"; };
+		32C7B2962AAB62DF0064F259 /* LoopMidi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopMidi.swift; sourceTree = "<group>"; };
+		32C7B2A52AAB8D570064F259 /* StatusMidi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMidi.swift; sourceTree = "<group>"; };
+		32DB419229733F9800573A3B /* StreamerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamerWindowController.h; sourceTree = "<group>"; };
+		32DB419329733F9800573A3B /* StreamerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamerWindowController.m; sourceTree = "<group>"; };
+		32DB419429733F9800573A3B /* StreamerWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamerWindowController.xib; sourceTree = "<group>"; };
+		32DB41982973404E00573A3B /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
+		32DB41992973404E00573A3B /* MatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixView.m; sourceTree = "<group>"; };
+		32DB419A2973404E00573A3B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		32DB419B2973404F00573A3B /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		32DB419C2973404F00573A3B /* Matrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matrix.m; sourceTree = "<group>"; };
+		32DB419D2973404F00573A3B /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
+		32DB419E2973404F00573A3B /* FileDropTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDropTextField.h; sourceTree = "<group>"; };
+		32DB419F2973404F00573A3B /* ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
+		32DB41A02973404F00573A3B /* MatrixWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixWindowController.xib; sourceTree = "<group>"; };
+		32DB41A12973404F00573A3B /* RowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowView.h; sourceTree = "<group>"; };
+		32DB41A22973404F00573A3B /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
+		32DB41A32973405000573A3B /* Item.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item.xib; sourceTree = "<group>"; };
+		32DB41A42973405000573A3B /* RightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTableViewController.h; sourceTree = "<group>"; };
+		32DB41A52973405000573A3B /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		32DB41A62973405000573A3B /* FileDropTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDropTextField.m; sourceTree = "<group>"; };
+		32DB41A72973405000573A3B /* RightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTableViewController.m; sourceTree = "<group>"; };
+		32DB41A82973405000573A3B /* MatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixView.h; sourceTree = "<group>"; };
+		32DB41A92973405000573A3B /* MatrixWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixWindowController.h; sourceTree = "<group>"; };
+		32DB41AA2973405100573A3B /* MatrixWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixWindowController.m; sourceTree = "<group>"; };
+		32DB41AB2973405100573A3B /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
+		32DB41AC2973405100573A3B /* ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		32DB41AD2973405100573A3B /* RowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowView.m; sourceTree = "<group>"; };
+		32DB41BB297340DF00573A3B /* TcpClientBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpClientBrowser.h; sourceTree = "<group>"; };
+		32DB41BC297340DF00573A3B /* TcpClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpClientConnection.h; sourceTree = "<group>"; };
+		32DB41BD297340DF00573A3B /* TcpClientBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpClientBrowser.m; sourceTree = "<group>"; };
+		32DB41BE297340DF00573A3B /* TcpClientConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpClientConnection.m; sourceTree = "<group>"; };
+		32DB41C32973420C00573A3B /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		32DB41C42973420C00573A3B /* DocWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocWindow.h; sourceTree = "<group>"; };
+		32DB41C52973420D00573A3B /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		32DB41C62973420D00573A3B /* DocWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocWindow.m; sourceTree = "<group>"; };
+		32DB41CE2973426F00573A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		32DB41D12973432F00573A3B /* EditorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditorWindowController.xib; sourceTree = "<group>"; };
+		32DB41D22973433000573A3B /* BackgroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundImageView.m; sourceTree = "<group>"; };
+		32DB41D32973433000573A3B /* EditorWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorWindowController.h; sourceTree = "<group>"; };
+		32DB41D42973433000573A3B /* EditorWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorWindowController.m; sourceTree = "<group>"; };
+		32DB41D52973433000573A3B /* BackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundImageView.h; sourceTree = "<group>"; };
+		32DB41DC297343A300573A3B /* ScriptResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptResult.h; sourceTree = "<group>"; };
+		32DB41DD297343A300573A3B /* ScriptResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptResult.m; sourceTree = "<group>"; };
+		32DB41FD297345EB00573A3B /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		32DB41FE297345EB00573A3B /* OscServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscServer.h; sourceTree = "<group>"; };
+		32DB41FF297345EC00573A3B /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		32DB4200297345EC00573A3B /* OscServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscServer.m; sourceTree = "<group>"; };
+		32DB4206297346DC00573A3B /* AleDoc21-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AleDoc21-Bridging-Header.h"; sourceTree = "<group>"; };
+		32DB4207297346DC00573A3B /* Streamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Streamer.swift; sourceTree = "<group>"; };
+		32DB420A2973474200573A3B /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		32DB420B2973474200573A3B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32DB420F2973477800573A3B /* OverlayWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayWindowController.xib; sourceTree = "<group>"; };
+		32DB42102973477800573A3B /* OverlayWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayWindowController.swift; sourceTree = "<group>"; };
+		32DB4213297347A200573A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32DB421B2973485500573A3B /* AAPLStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLStreamer.h; sourceTree = "<group>"; };
+		32DB421C2973485500573A3B /* StreamerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamerObject.m; sourceTree = "<group>"; };
+		32DB421D2973485500573A3B /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
+		32DB421E2973485500573A3B /* StreamerRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamerRenderer.h; sourceTree = "<group>"; };
+		32DB421F2973485500573A3B /* AAPLShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
+		32DB42202973485500573A3B /* StreamerRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamerRenderer.m; sourceTree = "<group>"; };
+		32DB42212973485500573A3B /* StreamerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamerObject.h; sourceTree = "<group>"; };
+		32DB42222973485500573A3B /* AAPLStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLStreamer.m; sourceTree = "<group>"; };
+		32DB422D29734AB000573A3B /* Annunciator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annunciator.h; sourceTree = "<group>"; };
+		32DB422E29734AB000573A3B /* Annunciator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annunciator.m; sourceTree = "<group>"; };
+		32DB423229734B2900573A3B /* red16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red16.png; sourceTree = "<group>"; };
+		32DB423429734B2900573A3B /* green16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green16.png; sourceTree = "<group>"; };
+		32DB423629734B2900573A3B /* blue16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue16.png; sourceTree = "<group>"; };
+		32DB424629734C2600573A3B /* AdrClientWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdrClientWindowController.m; sourceTree = "<group>"; };
+		32DB424729734C2600573A3B /* AdrClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdrClient.h; sourceTree = "<group>"; };
+		32DB424829734C2600573A3B /* AdrClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdrClient.m; sourceTree = "<group>"; };
+		32DB424929734C2600573A3B /* AdrClientWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdrClientWindowController.h; sourceTree = "<group>"; };
+		32DB424A29734C2600573A3B /* AdrClientWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdrClientWindowController.xib; sourceTree = "<group>"; };
+		32DB424E29734D3300573A3B /* EditorTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorTextField.h; sourceTree = "<group>"; };
+		32DB424F29734D3300573A3B /* EditorTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorTextField.m; sourceTree = "<group>"; };
+		32DB425129734E2100573A3B /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		32DB425229734E2100573A3B /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		32DB425329734E2100573A3B /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindowController.xib; sourceTree = "<group>"; };
+		32DB425629734E9400573A3B /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		32DB425729734E9400573A3B /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		32DB425A297353A400573A3B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		32DB425C297353AD00573A3B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		32DB425E297353B700573A3B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		32DB4260297353C000573A3B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		32DB4262297353CE00573A3B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		32DB4263297353CE00573A3B /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		32DB4266297353DC00573A3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		32DB4268297353EE00573A3B /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/PrivateFrameworks/Network.framework; sourceTree = SDKROOT; };
+		32DB426A297353F900573A3B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		32E183E4298EE396008C2B32 /* XKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XKey.swift; sourceTree = "<group>"; };
+		32E183E6298EE396008C2B32 /* ReadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
+		32E183E8298EE396008C2B32 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		32E183E9298EE396008C2B32 /* xKeyProducts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xKeyProducts.plist; sourceTree = "<group>"; };
+		32E183EA298EE397008C2B32 /* XKProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XKProducts.json; sourceTree = "<group>"; };
+		32E183EB298EE397008C2B32 /* USBConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBConnection.swift; sourceTree = "<group>"; };
+		32E338CE2A93DBA300C484FB /* PixelBufferDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelBufferDelay.swift; sourceTree = "<group>"; };
+		32EAAC90297773AD00D7BBB6 /* ArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayController.m; sourceTree = "<group>"; };
+		32EAAC91297773AD00D7BBB6 /* ArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayController.h; sourceTree = "<group>"; };
+		32EADFFE2A729FF100C5D223 /* FileDropButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDropButton.swift; sourceTree = "<group>"; };
+		32F8FD982A6F3BAD002AAEF8 /* SwiftDropButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDropButton.swift; sourceTree = "<group>"; };
+		32FC9D8F2973139800DD9E2D /* AleDoc21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AleDoc21.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FC9D9B2973139800DD9E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32FC9D9E2973139800DD9E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32FC9DA02973139800DD9E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FC9DA12973139800DD9E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32FC9DA32973139800DD9E2D /* AleDoc21.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AleDoc21.entitlements; sourceTree = "<group>"; };
+		32FC9DA82973139800DD9E2D /* AleDoc21Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AleDoc21Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FC9DAC2973139800DD9E2D /* AleDoc21Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AleDoc21Tests.m; sourceTree = "<group>"; };
+		32FC9DB22973139800DD9E2D /* AleDoc21UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AleDoc21UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FC9DB62973139800DD9E2D /* AleDoc21UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AleDoc21UITests.m; sourceTree = "<group>"; };
+		32FC9DB82973139800DD9E2D /* AleDoc21UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AleDoc21UITestsLaunchTests.m; sourceTree = "<group>"; };
+		7380797629E0840B0048F8F3 /* yellow16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow16.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32FC9D8C2973139800DD9E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DB426B297353F900573A3B /* MetalKit.framework in Frameworks */,
+				32DB4261297353C000573A3B /* Cocoa.framework in Frameworks */,
+				32DB425D297353AD00573A3B /* AVFoundation.framework in Frameworks */,
+				32DB4267297353DD00573A3B /* Foundation.framework in Frameworks */,
+				32DB4269297353EE00573A3B /* Network.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC9DA52973139800DD9E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC9DAF2973139800DD9E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		321A0FDC2973308800CA4F1E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				325F5D942AF5C00300545514 /* Scripts */,
+				325F5D922AF5B00C00545514 /* cliclick */,
+				32DB41DC297343A300573A3B /* ScriptResult.h */,
+				32DB41DD297343A300573A3B /* ScriptResult.m */,
+				7380797629E0840B0048F8F3 /* yellow16.png */,
+				32DB424E29734D3300573A3B /* EditorTextField.h */,
+				32DB424F29734D3300573A3B /* EditorTextField.m */,
+				3227BF192986FA070018B672 /* clear16.png */,
+				32DB423229734B2900573A3B /* red16.png */,
+				32DB423429734B2900573A3B /* green16.png */,
+				32DB423629734B2900573A3B /* blue16.png */,
+				32DB422D29734AB000573A3B /* Annunciator.h */,
+				32DB422E29734AB000573A3B /* Annunciator.m */,
+				321A0FE02973321100CA4F1E /* TcCalculator.h */,
+				321A0FE12973321100CA4F1E /* TcCalculator.m */,
+				321A0FDF2973321100CA4F1E /* TCFormatter.h */,
+				321A0FDE2973321100CA4F1E /* TCFormatter.m */,
+				3291311D2982D0050083217A /* ColorSupport.m */,
+				3291311F2982D01F0083217A /* ColorSupport.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		321A0FDD2973309900CA4F1E /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				321A0FE8297332C900CA4F1E /* MidiClient_v2.h */,
+				321A0FE4297332C900CA4F1E /* MidiClient_v2.m */,
+				321A0FE5297332C900CA4F1E /* MidiCommands.h */,
+				321A0FE6297332C900CA4F1E /* MidiHui.h */,
+				321A0FE7297332C900CA4F1E /* MidiHui.m */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		321A0FEB2973333D00CA4F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				321A0FEF297333BC00CA4F1E /* inputs.plist */,
+				321A0FEC297333BC00CA4F1E /* outputs.plist */,
+				321A0FEE297333BC00CA4F1E /* ufxInputDictionary.plist */,
+				321A0FED297333BC00CA4F1E /* ufxOutputDictionary.plist */,
+				324D9AD529AC173500D750A8 /* ufxDictionary.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323646FB2985DF9F00D91DE8 /* XKey */ = {
+			isa = PBXGroup;
+			children = (
+				32E183E4298EE396008C2B32 /* XKey.swift */,
+				32E183E5298EE396008C2B32 /* XKeyReadData */,
+			);
+			path = XKey;
+			sourceTree = "<group>";
+		};
+		325F5D942AF5C00300545514 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				325F5D952AF5C00300545514 /* jxaRenameLastTrack.scpt */,
+				325F5D962AF5C00300545514 /* isModalDialog.scpt */,
+				325F5D972AF5C00300545514 /* jxaIsModalDialog.scpt */,
+				325F5D982AF5C00300545514 /* addCue.scpt */,
+				325F5D992AF5C00300545514 /* setCueName.scpt */,
+				325F5D9A2AF5C00300545514 /* prerollOff.scpt */,
+				325F5D9B2AF5C00300545514 /* copyClipToComp.scpt */,
+				325F5D9C2AF5C00300545514 /* jxaCutAndPaste.scpt */,
+				325F5D9D2AF5C00300545514 /* zeroFeet.scpt */,
+				325F5D9E2AF5C00300545514 /* stopQuickTime.scpt */,
+				325F5D9F2AF5C00300545514 /* jxaLocate.scpt */,
+				325F5DA02AF5C00300545514 /* boomRecStop.scpt */,
+				325F5DA12AF5C00300545514 /* renameLastTrack.scpt */,
+				325F5DA22AF5C00300545514 /* wildSyncSelect.scpt */,
+				325F5DA32AF5C00300545514 /* jxaGetSession.scpt */,
+				325F5DA42AF5C00300545514 /* jxaPrerollOn.scpt */,
+				325F5DA52AF5C00300545514 /* jxaKeyStroke.scpt */,
+				325F5DA62AF5C00300545514 /* jxaGetVideoSyncOffset.scpt */,
+				325F5DA72AF5C00300545514 /* showProtools.scpt */,
+				325F5DA82AF5C00300545514 /* playQuickTime.scpt */,
+				325F5DA92AF5C00300545514 /* prerollOn.scpt */,
+				325F5DAA2AF5C00300545514 /* keyStroke.scpt */,
+				325F5DAB2AF5C00300545514 /* mainCounterFormat.scpt */,
+				325F5DAC2AF5C00300545514 /* keyCode.scpt */,
+				325F5DAD2AF5C00300545514 /* jxaSetCueName.scpt */,
+				325F5DAE2AF5C00300545514 /* keyWithModifiers.scpt */,
+				325F5DAF2AF5C00300545514 /* cutAndPaste.scpt */,
+				325F5DB02AF5C00300545514 /* linkTimelineAndEditSelection.scpt */,
+				325F5DB12AF5C00300545514 /* setBoomRecFolder.scpt */,
+				325F5DB22AF5C00300545514 /* jxaWildSyncSelect.scpt */,
+				325F5DB32AF5C00300545514 /* mem.scpt */,
+				325F5DB42AF5C00300545514 /* loopPlaybackOff.scpt */,
+				325F5DB52AF5C00300545514 /* setNote.scpt */,
+				325F5DB62AF5C00300545514 /* wildSyncSelect2.scpt */,
+				325F5DB72AF5C00300545514 /* getPreEdit.scpt */,
+				325F5DB82AF5C00300545514 /* setDialog.scpt */,
+				325F5DB92AF5C00300545514 /* jxaCopyClipToComp.scpt */,
+				325F5DBA2AF5C00300545514 /* armLastTrack.scpt */,
+				325F5DBB2AF5C00300545514 /* jxaSetDialog.scpt */,
+				325F5DBC2AF5C00300545514 /* jxaArmLastTrack.scpt */,
+				325F5DBD2AF5C00300545514 /* pingProTools.scpt */,
+				325F5DBE2AF5C00300545514 /* muteTrackWithIndex.scpt */,
+				325F5DBF2AF5C00300545514 /* getProtoolsInfo.scpt */,
+				325F5DC02AF5C00300545514 /* jxaAddCue.scpt */,
+				325F5DC12AF5C00300545514 /* jxaGetProtoolsPosition.scpt */,
+				325F5DC22AF5C00300545514 /* showAlert.scpt */,
+				325F5DC32AF5C00300545514 /* boomRecAbort.scpt */,
+				325F5DC42AF5C00300545514 /* jxaSetNote.scpt */,
+				325F5DC52AF5C00300545514 /* videoOnline.scpt */,
+				325F5DC62AF5C00300545514 /* getProtoolsPosition.scpt */,
+				325F5DC72AF5C00300545514 /* boomRecStart.scpt */,
+				325F5DC82AF5C00300545514 /* jxaGetSampleRate.scpt */,
+				325F5DC92AF5C00300545514 /* setZeroFeetAtTc.scpt */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		325FF4102A81539B00BD1E0A /* CaptureSample */ = {
+			isa = PBXGroup;
+			children = (
+				32E338CE2A93DBA300C484FB /* PixelBufferDelay.swift */,
+				325FF4112A81539B00BD1E0A /* CaptureSample.entitlements */,
+				325FF4122A81539B00BD1E0A /* AudioPlayer.swift */,
+				325FF4132A81539B00BD1E0A /* Assets.xcassets */,
+				325FF4152A81539B00BD1E0A /* Preview Content */,
+				325FF4172A81539B00BD1E0A /* ScreenRecorder.swift */,
+				325FF4182A81539B00BD1E0A /* Audio */,
+				325FF41A2A81539B00BD1E0A /* PowerMeter.swift */,
+				325FF41B2A81539B00BD1E0A /* Views */,
+				325FF4202A81539B00BD1E0A /* ContentView.swift */,
+				325FF4212A81539B00BD1E0A /* CaptureEngine.swift */,
+			);
+			path = CaptureSample;
+			sourceTree = "<group>";
+		};
+		325FF4152A81539B00BD1E0A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				325FF4162A81539B00BD1E0A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		325FF4182A81539B00BD1E0A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				325FF4192A81539B00BD1E0A /* Synth.aif */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		325FF41B2A81539B00BD1E0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				325FF41C2A81539B00BD1E0A /* CapturePreview.swift */,
+				325FF41D2A81539B00BD1E0A /* MaterialView.swift */,
+				325FF41E2A81539B00BD1E0A /* AudioLevelsView.swift */,
+				325FF41F2A81539B00BD1E0A /* ConfigurationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3268C4E92992F8D0000BE1C2 /* SwiftMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				3268C4EA2992F8D0000BE1C2 /* SwiftMidi.swift */,
+				3268C4EB2992F8D0000BE1C2 /* SwiftMidiConstants.swift */,
+				3268C4ED2992F8D0000BE1C2 /* SwiftMidiClient.swift */,
+			);
+			path = SwiftMIDI;
+			sourceTree = "<group>";
+		};
+		327EDD692AAA213C001AEEBE /* DialMidi */ = {
+			isa = PBXGroup;
+			children = (
+				327EDD6A2AAA2164001AEEBE /* DialMidiWindowController.swift */,
+				327EDD6B2AAA2164001AEEBE /* DialMidiWindowController.xib */,
+				327EDD6E2AAA22F8001AEEBE /* DialMidiViewController.swift */,
+				327EDD702AAA77C9001AEEBE /* dialMidi.plist */,
+			);
+			path = DialMidi;
+			sourceTree = "<group>";
+		};
+		32892D362A701AD000971C95 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3276EF162A818A2600CC4319 /* ObjCPlayFile.h */,
+				3276EF172A818A2600CC4319 /* ObjCPlayFile.mm */,
+				32892D372A701B0E00971C95 /* AudioPlayerWindowController.swift */,
+				32892D382A701B0E00971C95 /* AudioPlayerWindowController.xib */,
+				32892D3B2A701DA800971C95 /* AudioPlayerViewController.swift */,
+				32F8FD982A6F3BAD002AAEF8 /* SwiftDropButton.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		32A35F7C2A7157510080AE1B /* VideoDelay */ = {
+			isa = PBXGroup;
+			children = (
+				325FF4102A81539B00BD1E0A /* CaptureSample */,
+				32A35F7D2A71578F0080AE1B /* VideoDelayWindowController.swift */,
+			);
+			path = VideoDelay;
+			sourceTree = "<group>";
+		};
+		32C7B2952AAB62B50064F259 /* SwiftMidiObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3296F0892AE1D8450005B2F5 /* MtcMidi.swift */,
+				32F431172AA7848700438439 /* BoomRecorder */,
+				3268C4E92992F8D0000BE1C2 /* SwiftMIDI */,
+				327EDD692AAA213C001AEEBE /* DialMidi */,
+				32C7B2962AAB62DF0064F259 /* LoopMidi.swift */,
+				322EF0092991B12B00CC057E /* LpMini.swift */,
+				32C7B2A52AAB8D570064F259 /* StatusMidi.swift */,
+				328F26D32AAF96AB0002A9FD /* ControlMidi.swift */,
+			);
+			path = SwiftMidiObjects;
+			sourceTree = "<group>";
+		};
+		32DB419129733F6400573A3B /* Streamer */ = {
+			isa = PBXGroup;
+			children = (
+				32DB419229733F9800573A3B /* StreamerWindowController.h */,
+				32DB419329733F9800573A3B /* StreamerWindowController.m */,
+				32DB419429733F9800573A3B /* StreamerWindowController.xib */,
+			);
+			path = Streamer;
+			sourceTree = "<group>";
+		};
+		32DB419729733FB500573A3B /* MADI_monitor */ = {
+			isa = PBXGroup;
+			children = (
+				32DB419E2973404F00573A3B /* FileDropTextField.h */,
+				32DB41A62973405000573A3B /* FileDropTextField.m */,
+				32DB419A2973404E00573A3B /* Item.h */,
+				32DB41A52973405000573A3B /* Item.m */,
+				32DB41A32973405000573A3B /* Item.xib */,
+				32DB41AC2973405100573A3B /* ItemView.h */,
+				32DB419F2973404F00573A3B /* ItemView.m */,
+				32DB419D2973404F00573A3B /* LeftTableViewController.h */,
+				32DB41982973404E00573A3B /* LeftTableViewController.m */,
+				32DB419B2973404F00573A3B /* Matrix.h */,
+				32DB419C2973404F00573A3B /* Matrix.m */,
+				32DB41A82973405000573A3B /* MatrixView.h */,
+				32DB41992973404E00573A3B /* MatrixView.m */,
+				32DB41A92973405000573A3B /* MatrixWindowController.h */,
+				32DB41AA2973405100573A3B /* MatrixWindowController.m */,
+				32DB41A02973404F00573A3B /* MatrixWindowController.xib */,
+				32DB41A42973405000573A3B /* RightTableViewController.h */,
+				32DB41A72973405000573A3B /* RightTableViewController.m */,
+				32DB41A12973404F00573A3B /* RowView.h */,
+				32DB41AD2973405100573A3B /* RowView.m */,
+				32DB41AB2973405100573A3B /* Slider.h */,
+				32DB41A22973404F00573A3B /* Slider.m */,
+				32EADFFE2A729FF100C5D223 /* FileDropButton.swift */,
+			);
+			path = MADI_monitor;
+			sourceTree = "<group>";
+		};
+		32DB41BA2973407700573A3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				32DB41BB297340DF00573A3B /* TcpClientBrowser.h */,
+				32DB41BD297340DF00573A3B /* TcpClientBrowser.m */,
+				32DB41BC297340DF00573A3B /* TcpClientConnection.h */,
+				32DB41BE297340DF00573A3B /* TcpClientConnection.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		32DB41C12973411200573A3B /* AleDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				32DB425129734E2100573A3B /* PreferencesWindowController.h */,
+				32DB425229734E2100573A3B /* PreferencesWindowController.m */,
+				32DB425329734E2100573A3B /* PreferencesWindowController.xib */,
+				321A0FDA2973305F00CA4F1E /* AleDelegate.h */,
+				321A0FD92973305F00CA4F1E /* AleDelegate.m */,
+			);
+			path = AleDelegate;
+			sourceTree = "<group>";
+		};
+		32DB41D0297342CB00573A3B /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				32DB41D52973433000573A3B /* BackgroundImageView.h */,
+				32DB41D22973433000573A3B /* BackgroundImageView.m */,
+				32DB41D32973433000573A3B /* EditorWindowController.h */,
+				32DB41D42973433000573A3B /* EditorWindowController.m */,
+				32DB41D12973432F00573A3B /* EditorWindowController.xib */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		32DB41FC2973459100573A3B /* OSC */ = {
+			isa = PBXGroup;
+			children = (
+				32DB41FE297345EB00573A3B /* OscServer.h */,
+				32DB4200297345EC00573A3B /* OscServer.m */,
+				32DB41FD297345EB00573A3B /* Server.h */,
+				32DB41FF297345EC00573A3B /* Server.m */,
+			);
+			path = OSC;
+			sourceTree = "<group>";
+		};
+		32DB42032973460F00573A3B /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				32DB4213297347A200573A3B /* Assets.xcassets */,
+				32DB42102973477800573A3B /* OverlayWindowController.swift */,
+				32DB420F2973477800573A3B /* OverlayWindowController.xib */,
+				32DB420A2973474200573A3B /* TextView.swift */,
+				32DB420B2973474200573A3B /* ViewController.swift */,
+				32DB4207297346DC00573A3B /* Streamer.swift */,
+				32DB42042973462800573A3B /* Renderer */,
+				32DB4206297346DC00573A3B /* AleDoc21-Bridging-Header.h */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		32DB42042973462800573A3B /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				32DB421D2973485500573A3B /* AAPLShaders.metal */,
+				32DB421F2973485500573A3B /* AAPLShaderTypes.h */,
+				32DB421B2973485500573A3B /* AAPLStreamer.h */,
+				32DB42222973485500573A3B /* AAPLStreamer.m */,
+				32DB42212973485500573A3B /* StreamerObject.h */,
+				32DB421C2973485500573A3B /* StreamerObject.m */,
+				32DB421E2973485500573A3B /* StreamerRenderer.h */,
+				32DB42202973485500573A3B /* StreamerRenderer.m */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		32DB424529734BF200573A3B /* ADRClient */ = {
+			isa = PBXGroup;
+			children = (
+				32DB424729734C2600573A3B /* AdrClient.h */,
+				32DB424829734C2600573A3B /* AdrClient.m */,
+				32DB424929734C2600573A3B /* AdrClientWindowController.h */,
+				32DB424629734C2600573A3B /* AdrClientWindowController.m */,
+				32DB424A29734C2600573A3B /* AdrClientWindowController.xib */,
+			);
+			path = ADRClient;
+			sourceTree = "<group>";
+		};
+		32DB4259297353A400573A3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A35F782A7157100080AE1B /* Syphon.framework */,
+				32DB426A297353F900573A3B /* MetalKit.framework */,
+				32DB4268297353EE00573A3B /* Network.framework */,
+				32DB4266297353DC00573A3B /* Foundation.framework */,
+				32DB4262297353CE00573A3B /* CoreAudio.framework */,
+				32DB4263297353CE00573A3B /* CoreAudioKit.framework */,
+				32DB4260297353C000573A3B /* Cocoa.framework */,
+				32DB425E297353B700573A3B /* AVKit.framework */,
+				32DB425C297353AD00573A3B /* AVFoundation.framework */,
+				32DB425A297353A400573A3B /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32E183E5298EE396008C2B32 /* XKeyReadData */ = {
+			isa = PBXGroup;
+			children = (
+				32E183E6298EE396008C2B32 /* ReadData.swift */,
+				32E183E7298EE396008C2B32 /* Resources */,
+				32E183EB298EE397008C2B32 /* USBConnection.swift */,
+			);
+			path = XKeyReadData;
+			sourceTree = "<group>";
+		};
+		32E183E7298EE396008C2B32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32E183E8298EE396008C2B32 /* data.json */,
+				32E183E9298EE396008C2B32 /* xKeyProducts.plist */,
+				32E183EA298EE397008C2B32 /* XKProducts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32F431172AA7848700438439 /* BoomRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				3213E0062AA78C9F00AB8691 /* BoomRecorderMIDI.swift */,
+				3213E03F2AA7EB5300AB8691 /* StatusImageView.swift */,
+			);
+			path = BoomRecorder;
+			sourceTree = "<group>";
+		};
+		32FC9D862973139800DD9E2D = {
+			isa = PBXGroup;
+			children = (
+				32C7B2952AAB62B50064F259 /* SwiftMidiObjects */,
+				32A35F7C2A7157510080AE1B /* VideoDelay */,
+				32892D362A701AD000971C95 /* AudioPlayer */,
+				323646FB2985DF9F00D91DE8 /* XKey */,
+				32DB42032973460F00573A3B /* Overlays */,
+				32DB41FC2973459100573A3B /* OSC */,
+				32DB41D0297342CB00573A3B /* Editor */,
+				32DB424529734BF200573A3B /* ADRClient */,
+				32DB41C12973411200573A3B /* AleDelegate */,
+				32DB41BA2973407700573A3B /* Network */,
+				32DB419729733FB500573A3B /* MADI_monitor */,
+				32DB419129733F6400573A3B /* Streamer */,
+				321A0FDD2973309900CA4F1E /* MIDI */,
+				321A0FDC2973308800CA4F1E /* Common */,
+				32FC9D912973139800DD9E2D /* AleDoc21 */,
+				32FC9DAB2973139800DD9E2D /* AleDoc21Tests */,
+				32FC9DB52973139800DD9E2D /* AleDoc21UITests */,
+				32FC9D902973139800DD9E2D /* Products */,
+				32DB4259297353A400573A3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32FC9D902973139800DD9E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32FC9D8F2973139800DD9E2D /* AleDoc21.app */,
+				32FC9DA82973139800DD9E2D /* AleDoc21Tests.xctest */,
+				32FC9DB22973139800DD9E2D /* AleDoc21UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32FC9D912973139800DD9E2D /* AleDoc21 */ = {
+			isa = PBXGroup;
+			children = (
+				32EAAC91297773AD00D7BBB6 /* ArrayController.h */,
+				32EAAC90297773AD00D7BBB6 /* ArrayController.m */,
+				32DB425629734E9400573A3B /* TableView.h */,
+				32DB425729734E9400573A3B /* TableView.m */,
+				32DB41C32973420C00573A3B /* Document.h */,
+				32DB41C52973420D00573A3B /* Document.m */,
+				32DB41C42973420C00573A3B /* DocWindow.h */,
+				32DB41C62973420D00573A3B /* DocWindow.m */,
+				321A0FEB2973333D00CA4F1E /* Supporting Files */,
+				32FC9D9B2973139800DD9E2D /* Assets.xcassets */,
+				32FC9D9D2973139800DD9E2D /* MainMenu.xib */,
+				32DB41CD2973426F00573A3B /* Document.xib */,
+				32FC9DA02973139800DD9E2D /* Info.plist */,
+				32FC9DA12973139800DD9E2D /* main.m */,
+				32FC9DA32973139800DD9E2D /* AleDoc21.entitlements */,
+				3238F6B8297B3AB30076DE3A /* DocLeftTableViewController.h */,
+				3238F6B9297B3AB30076DE3A /* DocLeftTableViewController.m */,
+				3238F6BB297B3ADD0076DE3A /* DocRightTableViewController.h */,
+				3238F6BC297B3ADD0076DE3A /* DocRightTableViewController.m */,
+				3238F6BD297B3ADD0076DE3A /* DocRightTableViewController.xib */,
+			);
+			path = AleDoc21;
+			sourceTree = "<group>";
+		};
+		32FC9DAB2973139800DD9E2D /* AleDoc21Tests */ = {
+			isa = PBXGroup;
+			children = (
+				32FC9DAC2973139800DD9E2D /* AleDoc21Tests.m */,
+			);
+			path = AleDoc21Tests;
+			sourceTree = "<group>";
+		};
+		32FC9DB52973139800DD9E2D /* AleDoc21UITests */ = {
+			isa = PBXGroup;
+			children = (
+				32FC9DB62973139800DD9E2D /* AleDoc21UITests.m */,
+				32FC9DB82973139800DD9E2D /* AleDoc21UITestsLaunchTests.m */,
+			);
+			path = AleDoc21UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32FC9D8E2973139800DD9E2D /* AleDoc21 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FC9DBC2973139800DD9E2D /* Build configuration list for PBXNativeTarget "AleDoc21" */;
+			buildPhases = (
+				32FC9D8B2973139800DD9E2D /* Sources */,
+				32FC9D8C2973139800DD9E2D /* Frameworks */,
+				32FC9D8D2973139800DD9E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AleDoc21;
+			productName = AleDoc21;
+			productReference = 32FC9D8F2973139800DD9E2D /* AleDoc21.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32FC9DA72973139800DD9E2D /* AleDoc21Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FC9DBF2973139800DD9E2D /* Build configuration list for PBXNativeTarget "AleDoc21Tests" */;
+			buildPhases = (
+				32FC9DA42973139800DD9E2D /* Sources */,
+				32FC9DA52973139800DD9E2D /* Frameworks */,
+				32FC9DA62973139800DD9E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32FC9DAA2973139800DD9E2D /* PBXTargetDependency */,
+			);
+			name = AleDoc21Tests;
+			productName = AleDoc21Tests;
+			productReference = 32FC9DA82973139800DD9E2D /* AleDoc21Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32FC9DB12973139800DD9E2D /* AleDoc21UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FC9DC22973139800DD9E2D /* Build configuration list for PBXNativeTarget "AleDoc21UITests" */;
+			buildPhases = (
+				32FC9DAE2973139800DD9E2D /* Sources */,
+				32FC9DAF2973139800DD9E2D /* Frameworks */,
+				32FC9DB02973139800DD9E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32FC9DB42973139800DD9E2D /* PBXTargetDependency */,
+			);
+			name = AleDoc21UITests;
+			productName = AleDoc21UITests;
+			productReference = 32FC9DB22973139800DD9E2D /* AleDoc21UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32FC9D872973139800DD9E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					32FC9D8E2973139800DD9E2D = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1420;
+					};
+					32FC9DA72973139800DD9E2D = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 32FC9D8E2973139800DD9E2D;
+					};
+					32FC9DB12973139800DD9E2D = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 32FC9D8E2973139800DD9E2D;
+					};
+				};
+			};
+			buildConfigurationList = 32FC9D8A2973139800DD9E2D /* Build configuration list for PBXProject "AleDoc21" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32FC9D862973139800DD9E2D;
+			productRefGroup = 32FC9D902973139800DD9E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32FC9D8E2973139800DD9E2D /* AleDoc21 */,
+				32FC9DA72973139800DD9E2D /* AleDoc21Tests */,
+				32FC9DB12973139800DD9E2D /* AleDoc21UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32FC9D8D2973139800DD9E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325F5DEB2AF5C00300545514 /* wildSyncSelect2.scpt in Resources */,
+				325F5DDC2AF5C00300545514 /* showProtools.scpt in Resources */,
+				325F5DFC2AF5C00300545514 /* boomRecStart.scpt in Resources */,
+				32892D3A2A701B0E00971C95 /* AudioPlayerWindowController.xib in Resources */,
+				325F5DD52AF5C00300545514 /* boomRecStop.scpt in Resources */,
+				325F5DE72AF5C00300545514 /* jxaWildSyncSelect.scpt in Resources */,
+				325F5DD12AF5C00300545514 /* jxaCutAndPaste.scpt in Resources */,
+				325F5DE02AF5C00300545514 /* mainCounterFormat.scpt in Resources */,
+				32DB423E29734B2900573A3B /* green16.png in Resources */,
+				325F5DF02AF5C00300545514 /* jxaSetDialog.scpt in Resources */,
+				325F5D932AF5B00C00545514 /* cliclick in Resources */,
+				325F5DCF2AF5C00300545514 /* prerollOff.scpt in Resources */,
+				325F5DFE2AF5C00300545514 /* setZeroFeetAtTc.scpt in Resources */,
+				325F5DE42AF5C00300545514 /* cutAndPaste.scpt in Resources */,
+				32DB423F29734B2900573A3B /* blue16.png in Resources */,
+				325F5DE22AF5C00300545514 /* jxaSetCueName.scpt in Resources */,
+				32FC9D9C2973139800DD9E2D /* Assets.xcassets in Resources */,
+				325FF4232A81539B00BD1E0A /* Assets.xcassets in Resources */,
+				32DB424D29734C2700573A3B /* AdrClientWindowController.xib in Resources */,
+				325F5DF52AF5C00300545514 /* jxaAddCue.scpt in Resources */,
+				325F5DD02AF5C00300545514 /* copyClipToComp.scpt in Resources */,
+				327EDD6D2AAA2164001AEEBE /* DialMidiWindowController.xib in Resources */,
+				32E183EF298EE397008C2B32 /* xKeyProducts.plist in Resources */,
+				32FC9D9F2973139800DD9E2D /* MainMenu.xib in Resources */,
+				32DB423C29734B2900573A3B /* red16.png in Resources */,
+				7380797729E0840B0048F8F3 /* yellow16.png in Resources */,
+				325F5DF82AF5C00300545514 /* boomRecAbort.scpt in Resources */,
+				325F5DEF2AF5C00300545514 /* armLastTrack.scpt in Resources */,
+				32E183EE298EE397008C2B32 /* data.json in Resources */,
+				325F5DD82AF5C00300545514 /* jxaGetSession.scpt in Resources */,
+				325F5DD72AF5C00300545514 /* wildSyncSelect.scpt in Resources */,
+				32DB42112973477800573A3B /* OverlayWindowController.xib in Resources */,
+				32DB41D62973433000573A3B /* EditorWindowController.xib in Resources */,
+				321A0FF3297333BC00CA4F1E /* inputs.plist in Resources */,
+				325F5DFD2AF5C00300545514 /* jxaGetSampleRate.scpt in Resources */,
+				32DB41B22973405100573A3B /* MatrixWindowController.xib in Resources */,
+				325F5DCB2AF5C00300545514 /* isModalDialog.scpt in Resources */,
+				325F5DFB2AF5C00300545514 /* getProtoolsPosition.scpt in Resources */,
+				325F5DDE2AF5C00300545514 /* prerollOn.scpt in Resources */,
+				32E183F0298EE397008C2B32 /* XKProducts.json in Resources */,
+				325F5DDA2AF5C00300545514 /* jxaKeyStroke.scpt in Resources */,
+				325F5DF32AF5C00300545514 /* muteTrackWithIndex.scpt in Resources */,
+				32DB419629733F9900573A3B /* StreamerWindowController.xib in Resources */,
+				325F5DD22AF5C00300545514 /* zeroFeet.scpt in Resources */,
+				325F5DF72AF5C00300545514 /* showAlert.scpt in Resources */,
+				32DB41B42973405100573A3B /* Item.xib in Resources */,
+				325F5DD42AF5C00300545514 /* jxaLocate.scpt in Resources */,
+				321A0FF2297333BC00CA4F1E /* ufxInputDictionary.plist in Resources */,
+				325F5DDF2AF5C00300545514 /* keyStroke.scpt in Resources */,
+				325F5DDB2AF5C00300545514 /* jxaGetVideoSyncOffset.scpt in Resources */,
+				325F5DFA2AF5C00300545514 /* videoOnline.scpt in Resources */,
+				325F5DCA2AF5C00300545514 /* jxaRenameLastTrack.scpt in Resources */,
+				325F5DF62AF5C00300545514 /* jxaGetProtoolsPosition.scpt in Resources */,
+				325F5DF22AF5C00300545514 /* pingProTools.scpt in Resources */,
+				325F5DD92AF5C00300545514 /* jxaPrerollOn.scpt in Resources */,
+				32DB425529734E2100573A3B /* PreferencesWindowController.xib in Resources */,
+				32DB41CF2973426F00573A3B /* Document.xib in Resources */,
+				325F5DDD2AF5C00300545514 /* playQuickTime.scpt in Resources */,
+				325F5DCC2AF5C00300545514 /* jxaIsModalDialog.scpt in Resources */,
+				324D9AD629AC173500D750A8 /* ufxDictionary.plist in Resources */,
+				3238F6BF297B3ADD0076DE3A /* DocRightTableViewController.xib in Resources */,
+				325F5DEE2AF5C00300545514 /* jxaCopyClipToComp.scpt in Resources */,
+				325F5DE82AF5C00300545514 /* mem.scpt in Resources */,
+				325F5DF42AF5C00300545514 /* getProtoolsInfo.scpt in Resources */,
+				327EDD712AAA77C9001AEEBE /* dialMidi.plist in Resources */,
+				325F5DE12AF5C00300545514 /* keyCode.scpt in Resources */,
+				325F5DED2AF5C00300545514 /* setDialog.scpt in Resources */,
+				325F5DF12AF5C00300545514 /* jxaArmLastTrack.scpt in Resources */,
+				325F5DD62AF5C00300545514 /* renameLastTrack.scpt in Resources */,
+				325F5DF92AF5C00300545514 /* jxaSetNote.scpt in Resources */,
+				321A0FF1297333BC00CA4F1E /* ufxOutputDictionary.plist in Resources */,
+				325F5DCE2AF5C00300545514 /* setCueName.scpt in Resources */,
+				325F5DEA2AF5C00300545514 /* setNote.scpt in Resources */,
+				32DB4214297347A200573A3B /* Assets.xcassets in Resources */,
+				325F5DCD2AF5C00300545514 /* addCue.scpt in Resources */,
+				325F5DE62AF5C00300545514 /* setBoomRecFolder.scpt in Resources */,
+				325FF4252A81539B00BD1E0A /* Preview Assets.xcassets in Resources */,
+				325F5DEC2AF5C00300545514 /* getPreEdit.scpt in Resources */,
+				325FF4272A81539B00BD1E0A /* Synth.aif in Resources */,
+				3227BF1A2986FA070018B672 /* clear16.png in Resources */,
+				325F5DE52AF5C00300545514 /* linkTimelineAndEditSelection.scpt in Resources */,
+				325F5DE32AF5C00300545514 /* keyWithModifiers.scpt in Resources */,
+				325F5DD32AF5C00300545514 /* stopQuickTime.scpt in Resources */,
+				321A0FF0297333BC00CA4F1E /* outputs.plist in Resources */,
+				325F5DE92AF5C00300545514 /* loopPlaybackOff.scpt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC9DA62973139800DD9E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC9DB02973139800DD9E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32FC9D8B2973139800DD9E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DB41B92973405100573A3B /* RowView.m in Sources */,
+				327EDD6F2AAA22F8001AEEBE /* DialMidiViewController.swift in Sources */,
+				325FF42C2A81539B00BD1E0A /* ConfigurationView.swift in Sources */,
+				3213E0402AA7EB5300AB8691 /* StatusImageView.swift in Sources */,
+				32892D3C2A701DA800971C95 /* AudioPlayerViewController.swift in Sources */,
+				3276EF182A818A2600CC4319 /* ObjCPlayFile.mm in Sources */,
+				328F26D42AAF96AB0002A9FD /* ControlMidi.swift in Sources */,
+				3238F6BA297B3AB30076DE3A /* DocLeftTableViewController.m in Sources */,
+				32DB41C0297340E000573A3B /* TcpClientConnection.m in Sources */,
+				32DB41BF297340E000573A3B /* TcpClientBrowser.m in Sources */,
+				327EDD6C2AAA2164001AEEBE /* DialMidiWindowController.swift in Sources */,
+				32C7B2A62AAB8D570064F259 /* StatusMidi.swift in Sources */,
+				32E183ED298EE397008C2B32 /* ReadData.swift in Sources */,
+				32DB4201297345EC00573A3B /* Server.m in Sources */,
+				3238F6BE297B3ADD0076DE3A /* DocRightTableViewController.m in Sources */,
+				32DB422F29734AB000573A3B /* Annunciator.m in Sources */,
+				32E338CF2A93DBA300C484FB /* PixelBufferDelay.swift in Sources */,
+				32E183F1298EE397008C2B32 /* USBConnection.swift in Sources */,
+				32DB41AE2973405100573A3B /* LeftTableViewController.m in Sources */,
+				325FF4262A81539B00BD1E0A /* ScreenRecorder.swift in Sources */,
+				32DB41B62973405100573A3B /* FileDropTextField.m in Sources */,
+				32DB41D82973433000573A3B /* EditorWindowController.m in Sources */,
+				325FF4282A81539B00BD1E0A /* PowerMeter.swift in Sources */,
+				32DB41D72973433000573A3B /* BackgroundImageView.m in Sources */,
+				32DB42232973485500573A3B /* StreamerObject.m in Sources */,
+				321A0FE9297332C900CA4F1E /* MidiClient_v2.m in Sources */,
+				32DB41B12973405100573A3B /* ItemView.m in Sources */,
+				325FF4222A81539B00BD1E0A /* AudioPlayer.swift in Sources */,
+				32DB42242973485500573A3B /* AAPLShaders.metal in Sources */,
+				32DB42122973477800573A3B /* OverlayWindowController.swift in Sources */,
+				32DB41B02973405100573A3B /* Matrix.m in Sources */,
+				3296F08A2AE1D8450005B2F5 /* MtcMidi.swift in Sources */,
+				32DB41DF297343A300573A3B /* ScriptResult.m in Sources */,
+				32DB4202297345EC00573A3B /* OscServer.m in Sources */,
+				32DB420D2973474200573A3B /* TextView.swift in Sources */,
+				3291311E2982D0050083217A /* ColorSupport.m in Sources */,
+				325FF4292A81539B00BD1E0A /* CapturePreview.swift in Sources */,
+				32DB41CA2973420D00573A3B /* Document.m in Sources */,
+				32DB425829734E9400573A3B /* TableView.m in Sources */,
+				32C7B2972AAB62DF0064F259 /* LoopMidi.swift in Sources */,
+				32DB420E2973474200573A3B /* ViewController.swift in Sources */,
+				321A0FE32973321100CA4F1E /* TcCalculator.m in Sources */,
+				32DB41CB2973420D00573A3B /* DocWindow.m in Sources */,
+				32FC9DA22973139800DD9E2D /* main.m in Sources */,
+				325FF42E2A81539B00BD1E0A /* CaptureEngine.swift in Sources */,
+				32DB419529733F9900573A3B /* StreamerWindowController.m in Sources */,
+				32DB425429734E2100573A3B /* PreferencesWindowController.m in Sources */,
+				32E183EC298EE397008C2B32 /* XKey.swift in Sources */,
+				321A0FEA297332C900CA4F1E /* MidiHui.m in Sources */,
+				32DB42252973485500573A3B /* StreamerRenderer.m in Sources */,
+				32DB41B72973405100573A3B /* RightTableViewController.m in Sources */,
+				32F8FD992A6F3BAD002AAEF8 /* SwiftDropButton.swift in Sources */,
+				325FF42B2A81539B00BD1E0A /* AudioLevelsView.swift in Sources */,
+				32DB41AF2973405100573A3B /* MatrixView.m in Sources */,
+				322EF00A2991B12B00CC057E /* LpMini.swift in Sources */,
+				3268C4EF2992F8D0000BE1C2 /* SwiftMidiConstants.swift in Sources */,
+				32DB41B32973405100573A3B /* Slider.m in Sources */,
+				3268C4F12992F8D0000BE1C2 /* SwiftMidiClient.swift in Sources */,
+				32DB424C29734C2700573A3B /* AdrClient.m in Sources */,
+				3213E0072AA78C9F00AB8691 /* BoomRecorderMIDI.swift in Sources */,
+				32A35F7F2A71578F0080AE1B /* VideoDelayWindowController.swift in Sources */,
+				32892D392A701B0E00971C95 /* AudioPlayerWindowController.swift in Sources */,
+				321A0FDB2973305F00CA4F1E /* AleDelegate.m in Sources */,
+				32DB425029734D3300573A3B /* EditorTextField.m in Sources */,
+				32EAAC92297773AD00D7BBB6 /* ArrayController.m in Sources */,
+				32DB424B29734C2700573A3B /* AdrClientWindowController.m in Sources */,
+				32EADFFF2A729FF100C5D223 /* FileDropButton.swift in Sources */,
+				32DB41B52973405100573A3B /* Item.m in Sources */,
+				32DB4208297346DC00573A3B /* Streamer.swift in Sources */,
+				325FF42D2A81539B00BD1E0A /* ContentView.swift in Sources */,
+				32DB41B82973405100573A3B /* MatrixWindowController.m in Sources */,
+				321A0FE22973321100CA4F1E /* TCFormatter.m in Sources */,
+				32DB42262973485500573A3B /* AAPLStreamer.m in Sources */,
+				3268C4EE2992F8D0000BE1C2 /* SwiftMidi.swift in Sources */,
+				325FF42A2A81539B00BD1E0A /* MaterialView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC9DA42973139800DD9E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FC9DAD2973139800DD9E2D /* AleDoc21Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC9DAE2973139800DD9E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FC9DB72973139800DD9E2D /* AleDoc21UITests.m in Sources */,
+				32FC9DB92973139800DD9E2D /* AleDoc21UITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32FC9DAA2973139800DD9E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32FC9D8E2973139800DD9E2D /* AleDoc21 */;
+			targetProxy = 32FC9DA92973139800DD9E2D /* PBXContainerItemProxy */;
+		};
+		32FC9DB42973139800DD9E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32FC9D8E2973139800DD9E2D /* AleDoc21 */;
+			targetProxy = 32FC9DB32973139800DD9E2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32DB41CD2973426F00573A3B /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32DB41CE2973426F00573A3B /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		32FC9D9D2973139800DD9E2D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FC9D9E2973139800DD9E2D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32FC9DBA2973139800DD9E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		32FC9DBB2973139800DD9E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		32FC9DBD2973139800DD9E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AleDoc21/AleDoc21.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AleDoc21/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2.10.02;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.AleDoc21;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Overlays/AleDoc21-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		32FC9DBE2973139800DD9E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AleDoc21/AleDoc21.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AleDoc21/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2.10.02;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.AleDoc21;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Overlays/AleDoc21-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+		32FC9DC02973139800DD9E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.AleDoc21Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AleDoc21.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AleDoc21";
+			};
+			name = Debug;
+		};
+		32FC9DC12973139800DD9E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.AleDoc21Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AleDoc21.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AleDoc21";
+			};
+			name = Release;
+		};
+		32FC9DC32973139800DD9E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.AleDoc21UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = AleDoc21;
+			};
+			name = Debug;
+		};
+		32FC9DC42973139800DD9E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4Q775934L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jsk.AleDoc21UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = AleDoc21;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32FC9D8A2973139800DD9E2D /* Build configuration list for PBXProject "AleDoc21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FC9DBA2973139800DD9E2D /* Debug */,
+				32FC9DBB2973139800DD9E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FC9DBC2973139800DD9E2D /* Build configuration list for PBXNativeTarget "AleDoc21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FC9DBD2973139800DD9E2D /* Debug */,
+				32FC9DBE2973139800DD9E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FC9DBF2973139800DD9E2D /* Build configuration list for PBXNativeTarget "AleDoc21Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FC9DC02973139800DD9E2D /* Debug */,
+				32FC9DC12973139800DD9E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FC9DC22973139800DD9E2D /* Build configuration list for PBXNativeTarget "AleDoc21UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FC9DC32973139800DD9E2D /* Debug */,
+				32FC9DC42973139800DD9E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32FC9D872973139800DD9E2D /* Project object */;
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>key</key>
+		<string>92</string>
+		<key>Title</key>
+		<string>Zoom</string>
+		<key>CC</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>93</string>
+		<key>Title</key>
+		<string>Source Connect</string>
+		<key>CC</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>94</string>
+		<key>Title</key>
+		<string>Actor Direct</string>
+		<key>CC</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>95</string>
+		<key>Title</key>
+		<string>Actor HP</string>
+		<key>CC</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>96</string>
+		<key>Title</key>
+		<string>Beeps</string>
+		<key>CC</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>97</string>
+		<key>Title</key>
+		<string>Mac CPU</string>
+		<key>CC</key>
+		<string>6</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>98</string>
+		<key>Title</key>
+		<string>Guide To Booth</string>
+		<key>CC</key>
+		<string>7</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>99</string>
+		<key>Title</key>
+		<string>Snoop</string>
+		<key>CC</key>
+		<string>8</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>100</string>
+		<key>Title</key>
+		<string>Loopback</string>
+		<key>CC</key>
+		<string>9</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>101</string>
+		<key>Title</key>
+		<string>Remote Actor Dir</string>
+		<key>CC</key>
+		<string>10</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>102</string>
+		<key>Title</key>
+		<string>Remote Actor HP</string>
+		<key>CC</key>
+		<string>11</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>103</string>
+		<key>Title</key>
+		<string>Video Delay</string>
+		<key>CC</key>
+		<string>12</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>104</string>
+		<key>Title</key>
+		<string>Control Room</string>
+		<key>CC</key>
+		<string>13</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>105</string>
+		<key>Title</key>
+		<string>Stage</string>
+		<key>CC</key>
+		<string>14</string>
+	</dict>
+	<dict>
+		<key>key</key>
+		<string>106</string>
+		<key>Title</key>
+		<string>Editor HP</string>
+		<key>CC</key>
+		<string>15</string>
+	</dict>
+</array>
+</plist>
