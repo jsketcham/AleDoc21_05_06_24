@@ -199,10 +199,10 @@ NSInteger encoding = NSMacOSRomanStringEncoding;    // default file encoding
         @"ASCII":@"1",
         @"Unicode":@"10"};
         
-        self.encodingKeys = @[@"Mac OS Roman"
+        self.encodingKeys = @[@"UTF-8"
+                              ,@"Mac OS Roman"
                               ,@"Latin 1"
                               ,@"ASCII"
-                              ,@"UTF-8"
                               ,@"Unicode"
                             ]; // combo box, try in order (Mac OS Roman is most likely)
         
