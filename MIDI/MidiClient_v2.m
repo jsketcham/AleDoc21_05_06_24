@@ -9,6 +9,7 @@
 #import "MidiClient_v2.h"
 #import <Cocoa/Cocoa.h>
 #import "AleDelegate.h"
+#import "MidiCommands.h"
 
 #define PORT_NOT_OPEN 0
 
@@ -524,29 +525,29 @@ static void notifyProc(const MIDINotification *message,
 //              );
 //    
 //}
-//static void SourceReadProc (const MIDIPacketList   *pktlist,
-//                            void                   *readProcRefCon,
-//                            void                   *srcConnRefCon)
-//{
-//    
-//    MidiClient *midiClient = (__bridge MidiClient*)readProcRefCon;
-//    
-//    MIDIPacket *packet = (MIDIPacket*)&pktlist->packet[0];
-//    
-//    for (int i = 0; i < pktlist->numPackets; ++i) {
-//        
-//        int len = packet->length;
-//        Byte *buffer = (Byte*)packet->data;
-//        
-//        @autoreleasepool {  // we believe that this at the top of the call tree should cover all objects created in the tree
-//            
-//            [midiClient decodeData:[NSData dataWithBytes:buffer length:len]];
-//        }
-//        
-//        packet = MIDIPacketNext(packet);    // per 'quick help' for MIDIPacketList
-//        
-//    }
-//}
+static void SourceReadProc (const MIDIPacketList   *pktlist,
+                            void                   *readProcRefCon,
+                            void                   *srcConnRefCon)
+{
+    
+    MidiClient *midiClient = (__bridge MidiClient*)readProcRefCon;
+    
+    MIDIPacket *packet = (MIDIPacket*)&pktlist->packet[0];
+    
+    for (int i = 0; i < pktlist->numPackets; ++i) {
+        
+        int len = packet->length;
+        Byte *buffer = (Byte*)packet->data;
+        
+        @autoreleasepool {  // we believe that this at the top of the call tree should cover all objects created in the tree
+            
+            [midiClient decodeData:[NSData dataWithBytes:buffer length:len]];
+        }
+        
+        packet = MIDIPacketNext(packet);    // per 'quick help' for MIDIPacketList
+        
+    }
+}
 -(void)midiTx:(NSData*)data{
     
     if(outPort == PORT_NOT_OPEN || dest == 0) return;    // not open for tx, exit
