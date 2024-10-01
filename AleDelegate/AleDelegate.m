@@ -431,7 +431,7 @@ enum{
         
     }
     
-    self.snoopState = SNOOP_STATE_ON;   // PT has to be present for this to set, see decodeMotionZoneByte()
+    self.snoopState = SNOOP_STATE_FORCE_ON;   // PT has to be present for this to set, see decodeMotionZoneByte()
     
     [self setCycleMotion:CYCLE_MODE_IDLE];  // turn off the button 2.10.02
     
@@ -488,6 +488,12 @@ NSDictionary *setLEDForUnitIDDictionary;    // checkbox items, send state of che
  ,@"useAltGuideInRecord": @[@9,@46]
  };
  */
+NSTimer *motionZoneByteTimer;
+-(void)motionZoneByteTimerService{
+    
+    self.snoopState = SNOOP_STATE_ON;
+    
+}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
@@ -500,10 +506,16 @@ NSDictionary *setLEDForUnitIDDictionary;    // checkbox items, send state of che
         bool snoopAuto = [[NSUserDefaults standardUserDefaults] boolForKey:@"snoopAuto"];
         NSInteger motionZoneByte = [[NSUserDefaults standardUserDefaults] integerForKey:@"motionZoneByte"];
         
+        if(motionZoneByteTimer){
+            [motionZoneByteTimer invalidate];
+        }
+        
+        // reduce messages to ufx by timing out on STOP
         if(snoopAuto && (motionZoneByte & 0x30) == 0x30){
             self.snoopState = SNOOP_STATE_OFF;
-        }else{
-            self.snoopState = SNOOP_STATE_ON;
+        }else if(snoopAuto && motionZoneByte == 0x8){
+            motionZoneByteTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target: self selector:@selector(motionZoneByteTimerService) userInfo:nil repeats: false];
+            
         }
     }
     
@@ -1392,7 +1404,8 @@ NSDictionary *dialDictionary = @{@"92" : @{DIAL_CLIENT_KEY : @"accClient"
                                          }
                                  ,@"99" : @{@"Text" : @"Snoop"
                                             ,@"Taper" : @"ufx"
-                                            ,@"Routine" : @"dialSnoopService:"
+                                            //,@"Routine" : @"dialSnoopService:"
+                                            ,@"Routine" : @"dialMuteDim:"
                                          }
                                  ,@"100" : @{DIAL_CLIENT_KEY : @"remoteClient"
                                             ,@"Taper" : @"ufx"
@@ -1733,7 +1746,7 @@ NSDictionary *dialToMuteDictionary = @{  @"104" : @"87"     // control room mute
         [self dialMuteDim:key];
     }
     
-    self.snoopState = self.snoopState;  // 2.10.02 dim snoop
+//    self.snoopState = self.snoopState;  // 2.10.02 dim snoop
 }
 
 // MARK: ------------ extra routines for dial MIDI service -------------
@@ -1905,7 +1918,7 @@ NSDictionary *dialToMuteDictionary = @{  @"104" : @"87"     // control room mute
 }
 -(void)dialSnoopService:(NSString*)key{
     
-    self.snoopState = self.snoopState;  // uses dial value for snoop gain
+//    self.snoopState = self.snoopState;  // uses dial value for snoop gain
     
     NSString *muteKey = [NSString stringWithFormat:@"%@_%@",DIAL_MUTE_KEY,key];
     NSInteger dialMute = [[NSUserDefaults standardUserDefaults] boolForKey:muteKey];
@@ -4787,8 +4800,12 @@ NSInteger trackBaseTable[] = {41,91,131,151,171,191,211};   //1,2,3,4,6,8 track,
 //    if(snoopState == _snoopState || !self.snoopAuto){
 //        return; // no change, or not enabled
 //    }
-    _snoopState = snoopState;
-    [self dialMuteDim:@"99"];   // special-case dialMuteDim for '99'
+    
+    if(snoopState != _snoopState){
+        
+        _snoopState = snoopState & 1;
+        [self dialMuteDim:@"99"];   // special-case dialMuteDim for '99'
+    }
 
 }
 -(NSInteger)snoopState{
