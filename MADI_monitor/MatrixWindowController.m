@@ -2695,11 +2695,13 @@ bool isFirstNumRecTracksTag = true;
     }
     cmd = [cmd stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
+    
 //    if(cmd.length > 120) cmd = [cmd substringToIndex:120];    // pt takes too long to name clips otherwise
     
     cmd = [delegate stripNonAscii:cmd];  // helper to remove non-ascii chars, FIXME will not work for Latin 1
 
     [acwc txMsg:cmd];   // rename clip, copy to composite and the target track
+//    NSLog(@"%@",cmd);
 
 }
 //-(void)recordOffService:(NSInteger)cycleMode :(NSInteger)cycleMotion{

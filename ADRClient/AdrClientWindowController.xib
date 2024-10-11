@@ -20,6 +20,7 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="521" height="271"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <value key="minSize" type="size" width="521" height="271"/>
             <view key="contentView" id="2">
                 <rect key="frame" x="0.0" y="0.0" width="521" height="271"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -45,7 +46,7 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <size key="minSize" width="521" height="171"/>
-                                    <size key="maxSize" width="521" height="10000000"/>
+                                    <size key="maxSize" width="523" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </textView>
                             </subviews>

@@ -175,6 +175,7 @@ NSLock *ioLock;
     //    [self setConnectionStatusImage:redImage];
     
     [self setTimer:[NSTimer scheduledTimerWithTimeInterval:PING_INTERVAL target: self selector:@selector(timer_service) userInfo:nil repeats: YES]];
+    
 }
 //-(void)startTcpClient{
 //
@@ -1427,13 +1428,23 @@ NSArray *hidePing = @[@"jxaGetSampleRate"
         NSInteger millisecs = (NSInteger)timeInterval % 1000;
         
         msg = [array[0] stringByAppendingString:[NSString stringWithFormat:@".%03ld %@",millisecs,msg]];
+        
+
     }
-    
+    // 10/11/24 too many tabs put /r into the text, don't know why
+    msg = [msg stringByReplacingOccurrencesOfString:@"\t" withString:@" "];
+
     NSTextStorage * sto = [_rxTextView textStorage];
     NSAttributedString *ats = [[NSAttributedString alloc] initWithString:[msg stringByAppendingString:@"\n"]];
+    // debugging mystery return in window text
+//    NSLog(@"appendToLog %@",msg); // return is not the text itself
     [sto appendAttributedString:ats];
     // scroll to end of document
     [_rxTextView scrollToEndOfDocument:nil];
+    
+//    if([msg containsString:@"jxaCutAndPaste"]){
+//        NSLog(@"%@",msg);
+//    }
     
 }
 
@@ -1449,7 +1460,7 @@ NSArray *hidePing = @[@"jxaGetSampleRate"
         // v1.00.18 show tx in log, Evan is debugging a 3 second delay
                 [self appendToLog:[NSString stringWithFormat:@"txMsg: %@",msg]];
 
-    }
+   }
     
     [_adrClient addToInArray:msg];
     
