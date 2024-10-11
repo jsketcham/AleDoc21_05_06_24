@@ -1143,7 +1143,7 @@ bool bInitializePtCtr = false;
         case 0:
             
             if(delegate.matrixWindowController.rehRecPb == MODE_CONTROL_RECORD){
-                [self txMsg:@"armLastTrack"]; // 2.00.00
+                [self txMsg:@"armLastTrack"]; // 2.00.00 start sequencer
             }
             // normal naming
             break;
