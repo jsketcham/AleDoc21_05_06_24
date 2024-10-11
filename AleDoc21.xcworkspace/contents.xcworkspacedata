@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Capture/CaptureSample.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AleDoc21.xcodeproj">
    </FileRef>
 </Workspace>

@@ -2197,13 +2197,14 @@ NSDictionary *dialToMuteDictionary = @{  @"104" : @"87"     // control room mute
     
     NSInteger numRecTracksTag = [_matrixWindowController numRecTracksTag];
     
-    NSInteger track = _currentTrack;
+    NSInteger track = _currentTrack;    // _currentTrack is zero-based
     
     track += trackBaseTable[numRecTracksTag];
     NSInteger trackMax = trackBaseTable[numRecTracksTag + 1] - 1; //=
     if(track > trackMax) track = trackMax;
     
     NSString *msg1 = [NSString stringWithFormat:@"mem %ld",track];
+    [_adrClientWindowController appendToLog:[NSString stringWithFormat:@"will run mem macro, selecting mem %ld, track %ld",(long)track,_currentTrack + 1]];
 
     NSString *msg = _matrixWindowController.show16Tracks & 1 ? msg16 : msg1;
     [_adrClientWindowController txMsg:msg];
