@@ -948,7 +948,7 @@ NSTimer *motionZoneByteTimer;
         case MODE_CONTROL_RECORD:
             
             [self renameLastTrack]; // rename on record cycle
-            [_adrClientWindowController txMsg:@"armLastTrack"]; // 2.00.00 start sequencer
+            //[_adrClientWindowController txMsg:@"armLastTrack"]; // 2.00.00 start sequencer
             
             break;
             
