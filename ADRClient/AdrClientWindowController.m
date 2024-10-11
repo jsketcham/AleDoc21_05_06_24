@@ -31,6 +31,7 @@
 //@property NSString *server;
 @property TcCalculator *tcc;
 @property NSDate *lastMouseUp;    // detect double clicks, restore yPos
+@property NSControlStateValue runState;
 
 @end
 
@@ -42,6 +43,7 @@
 @synthesize yPos = _yPos;
 @synthesize xPos = _xPos;
 @synthesize adrClient = _adrClient;
+@synthesize runState = _runState;
 
 NSLock *ioLock;
 
@@ -53,6 +55,7 @@ NSLock *ioLock;
     if (self) {
         // Initialization code here.
         _yPos = @"-1"; // no mouse up yet
+        self.runState = NSControlStateValueOn;
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",SERVER_KEY, nil];
@@ -1397,6 +1400,9 @@ NSArray *hidePing = @[@"jxaGetSampleRate"
 
 -(void)appendToLog:(NSString*)msg{
     
+    if(_runState != NSControlStateValueOn){
+        return;
+    }
     
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"hidePing"] == true){
         for(NSString *str in hidePing){
