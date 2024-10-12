@@ -1,4 +1,4 @@
-JsOsaDAS1.001.00bplist00бVscript_"г// to run in Terminal:
+JsOsaDAS1.001.00bplist00бVscript_!С// to run in Terminal:
 // % cd /Users/protools/Desktop/testScripts
 // % osascript -l JavaScript jxaCutAndPaste.scpt foobar 1 1
 
@@ -71,25 +71,17 @@ function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 			var editWindow = pt.windows[names[i]];
 			
 				editWindow.actions['AXRaise'].perform();
+				app.keystroke("ppp");	// we do not remember why this is done, get out of some known state?
 								
-				names = editWindow.groups.name()
-				var last
-				
-				app.keystroke('p')	// if 2 tracks are selected, this selects 1
+				names = editWindow.groups.name();
 				
 				while(names.length > 0){
-				
-					last = names.pop()
-						
+					var last = names.pop();
 					if (last.endsWith('Track ')){
-
-						btn = editWindow.groups[last].popUpButtons[0]	// Track Name button
-							
-						btn.actions['AXPress'].perform()	// select track
-							
-						break	
+						app.keystroke(";");	// track down, once per track, guarantees we will be on the last track
 					}
 				}
+				
 				
 				// offset trim (delay)
 				for(let i = 0; i < remoteOffset; i++){
@@ -182,17 +174,11 @@ function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 					
 				}
 				
-				names.pop()	// skip Comp track
+				for (let i = 0; i < tracksUp; i++){
 				
-				for(i = 0; i < tracksUp; i += 1){
-					
-					last = names.pop()
+					app.keystroke('p');
 				}
 				
-				delay(0.5)	// delay to avoid a double click 
-				btn = editWindow.groups[last].popUpButtons[0]	// Track Name button							
-				btn.actions['AXPress'].perform()	// select track
-			
 				delay(0.3)	// try a slight delay to see if it fixes the rare 'copy to wrong track'
 				
 				app.keystroke('v', { using: 'command down' });
@@ -332,4 +318,4 @@ function linkTimelineAndEditSelection(){
 	return false;
 }
 
-                              "щ jscr  њоо­
+                              !з jscr  њоо­
