@@ -2208,7 +2208,7 @@ NSDictionary *dialToMuteDictionary = @{  @"104" : @"87"     // control room mute
     NSString *msg = _matrixWindowController.show16Tracks & 1 ? msg16 : msg1;
     [_adrClientWindowController txMsg:msg];
     
-    [_adrClientWindowController appendToLog:[NSString stringWithFormat:@"selected track %ld",_currentTrack + 1]];
+//    [_adrClientWindowController appendToLog:[NSString stringWithFormat:@"selected track %ld",_currentTrack + 1]];
 
     // code below should be the same, but it does not work reliably
 
