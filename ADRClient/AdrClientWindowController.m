@@ -1146,7 +1146,7 @@ NSTimer *monitorSwitchingDelayTimer;
     switch( [msgArray[0] integerValue]){
         case -1:
             // TODO: 2.00.00 error
-            [delegate  alertErr:msg :@""];
+            [delegate  alertErr:msg :@"track naming error"];
             break;
         case 0:
             // normal naming
