@@ -1149,10 +1149,9 @@ NSTimer *monitorSwitchingDelayTimer;
             [delegate  alertErr:msg :@""];
             break;
         case 0:
-            
-            if(delegate.matrixWindowController.rehRecPb == MODE_CONTROL_RECORD){
-                [self txMsg:@"armLastTrack"]; // 2.00.00 start sequencer
-            }
+            // normal naming
+            // cycle start, MODE_CONTROL_RECORD
+            [self txMsg:@"armLastTrack"]; // 2.00.00 start sequencer
             // normal naming
             break;
         case 1:
