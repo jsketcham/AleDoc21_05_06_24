@@ -1220,9 +1220,20 @@ NSTimer *monitorSwitchingDelayTimer;
     
     delegate.cycleMode = CYCLE_MODE_RECORD;
     [delegate.ptHui onRecord];
+    //    [delegate.ptHui onPlay];
+        // 09/12/24 Evan sees a rare problem with 1st take not going into RECORD
+        recPlayTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(recPlayTimerService) userInfo:nil repeats:false];
+
+}
+NSTimer *recPlayTimer;
+
+-(void)recPlayTimerService{
+    
+    AleDelegate *delegate = (AleDelegate *)[NSApp delegate];
     [delegate.ptHui onPlay];
 
 }
+
 -(void)addCue:(NSArray *)msgArray{
     
     if(msgArray.count == 0){
