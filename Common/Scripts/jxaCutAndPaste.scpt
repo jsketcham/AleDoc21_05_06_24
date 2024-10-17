@@ -1,4 +1,4 @@
-JsOsaDAS1.001.00bplist00ÑVscript_#˜// to run in Terminal:
+JsOsaDAS1.001.00bplist00ÑVscript_(g// to run in Terminal:
 // % cd /Users/protools/Desktop/testScripts
 // % osascript -l JavaScript jxaCutAndPaste.scpt foobar 1 1
 
@@ -51,7 +51,7 @@ result;
 
 function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 
-	//linkTimelineAndEditSelection();	// also turns off 'tab to transients'
+//	setCursorToolCluster()();	// also turns off 'tab to transients'
 	
 	//var remoteOffset = parseInt(readAndSplitFile('/Documents/offset.txt', '\n'));
 	//console.log(remoteOffset);
@@ -338,4 +338,61 @@ function linkTimelineAndEditSelection(){
 	return false;
 }
 
-                              #®jscr  úÞÞ­
+function setCursorToolCluster(){
+
+// we need 'Tab to Transient' OFF, 'Link Timeline and Edit Selection' ON,
+// 'Link Track and Edit Selection' ON
+
+  	const app = Application('System Events');
+	const pt = app.processes['Pro Tools'];
+
+  	if(pt.exists()){
+	
+  		pt.frontmost = true;
+	
+		var names = pt.windows.name();
+	
+		for (let i = 0; i < names.length; i++){
+	
+			if(names[i].startsWith('Edit:')){
+			
+				var editWindow = pt.windows[names[i]];
+			
+				editWindow.actions['AXRaise'].perform();
+				
+				var cursorToolCluster = editWindow.groups["Cursor Tool Cluster"]
+				
+				var btns = cursorToolCluster.buttons
+				//"Tab to Transients"
+				
+//				var btn = btns["Tab to Transients"]
+				
+//				console.log(btn.value(), btn.value().length)
+				
+//				if(btn.value().length != 0){
+//					btn.actions['AXPress'].perform()
+//				}
+				
+				btn = btns["Link Track and Edit Selection"]
+				
+				console.log(btn.value(), btn.value().length)
+				
+				if(btn.value().length == 0){
+					btn.actions['AXPress'].perform()
+				}
+				
+				btn = btns["Link Timeline and Edit Selection"]
+				
+				console.log(btn.value(), btn.value().length)
+				
+				if(btn.value().length == 0){
+					btn.actions['AXPress'].perform()
+				}
+			}
+		}
+	}
+
+return 0
+}
+
+                              (} jscr  úÞÞ­
