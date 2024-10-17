@@ -2647,7 +2647,7 @@ bool isFirstNumRecTracksTag = true;
     start = [_tcc binaryToTc:(int)trimFrames withType:tcType];
     
     [delegate.adrClientWindowController txMsg:@"videoOnline 0"];
-    [delegate.adrClientWindowController txMsg:@"linkTimelineAndEditSelection 1"]; // so that locates load the edit in/out points
+//    [delegate.adrClientWindowController txMsg:@"linkTimelineAndEditSelection 1"]; // so that locates load the edit in/out points
     [delegate selectCurrentSixteenTrackMemory];     // might have changed banks
     
     [delegate locate:start :theIndex];  // locate for recordOffService, copyClipToComp
