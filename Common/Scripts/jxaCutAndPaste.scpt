@@ -1,4 +1,4 @@
-JsOsaDAS1.001.00bplist00ÑVscript_#–// to run in Terminal:
+JsOsaDAS1.001.00bplist00ÑVscript_#˜// to run in Terminal:
 // % cd /Users/protools/Desktop/testScripts
 // % osascript -l JavaScript jxaCutAndPaste.scpt foobar 1 1
 
@@ -203,7 +203,7 @@ function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 				app.keyCode(51);	// delete 
 				app.keystroke('\t', { using: 'option down' });	// tab to start of take
 				
-				delay(0.5)	// delay to avoid a double click
+				//delay(0.5)	// delay to avoid a double click
 				lastTrackBtn.actions['AXPress'].perform()	// select track
 
 				
@@ -338,4 +338,4 @@ function linkTimelineAndEditSelection(){
 	return false;
 }
 
-                              #¬jscr  úÞÞ­
+                              #®jscr  úÞÞ­
