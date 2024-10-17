@@ -1,4 +1,4 @@
-JsOsaDAS1.001.00bplist00ÑVscript_"Ó// to run in Terminal:
+JsOsaDAS1.001.00bplist00ÑVscript_#–// to run in Terminal:
 // % cd /Users/protools/Desktop/testScripts
 // % osascript -l JavaScript jxaCutAndPaste.scpt foobar 1 1
 
@@ -51,7 +51,7 @@ result;
 
 function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 
-	linkTimelineAndEditSelection();	// also turns off 'tab to transients'
+	//linkTimelineAndEditSelection();	// also turns off 'tab to transients'
 	
 	//var remoteOffset = parseInt(readAndSplitFile('/Documents/offset.txt', '\n'));
 	//console.log(remoteOffset);
@@ -74,6 +74,7 @@ function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 								
 				names = editWindow.groups.name()
 				var last
+				var lastTrackBtn	// select last track when done
 				
 				app.keystroke('p')	// if 2 tracks are selected, this selects 1
 				
@@ -86,6 +87,7 @@ function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 						btn = editWindow.groups[last].popUpButtons[0]	// Track Name button
 							
 						btn.actions['AXPress'].perform()	// select track
+						lastTrackBtn = btn
 							
 						break	
 					}
@@ -200,6 +202,10 @@ function copyClipsUp(dialog, recordToComposite, tracksUp, remoteOffset){
 				app.keystroke('\t', { using: 'shift down' });	// tab to end of previous take
 				app.keyCode(51);	// delete 
 				app.keystroke('\t', { using: 'option down' });	// tab to start of take
+				
+				delay(0.5)	// delay to avoid a double click
+				lastTrackBtn.actions['AXPress'].perform()	// select track
+
 				
 				
 				return ptName;
@@ -332,4 +338,4 @@ function linkTimelineAndEditSelection(){
 	return false;
 }
 
-                              "é jscr  úÞÞ­
+                              #¬jscr  úÞÞ­
